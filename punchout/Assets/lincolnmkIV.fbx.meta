@@ -286,6 +286,7 @@ ModelImporter:
     6400016: Unrigged_hat
     7400000: Run
     7400002: Stand
+    7400004: running
     9500000: //RootNode
     11100000: //RootNode
     13700000: LincolnModel
@@ -297,7 +298,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -305,17 +306,17 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Run
+      name: running
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 25
-      wrapMode: 0
+      lastFrame: 24
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -327,7 +328,286 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: base_chest1
+        weight: 0
+      - path: base_chest1/left_shoulder
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base/left_thumb_middle
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 0
+      - path: base_chest1/neck
+        weight: 0
+      - path: base_chest1/neck/head_crown
+        weight: 0
+      - path: base_chest1/neck/head_crown/head_hat_top
+        weight: 0
+      - path: base_chest1/right_shoulder
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base/right_thumb_middle
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 0
+      - path: base_chest1/stomach
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 0
+      - path: big_headed_characters
+        weight: 0
+      - path: big_headed_characters/Gamecharacter
+        weight: 0
+      - path: big_headed_characters/Gamecharacter/nurbsSphere4
+        weight: 0
+      - path: big_headed_characters/Gamecharacter/nurbsSphere5
+        weight: 0
+      - path: big_headed_characters/Gamecharacter1
+        weight: 0
+      - path: big_headed_characters/Gamecharacter1/nurbsSphere1
+        weight: 0
+      - path: big_headed_characters/Gamecharacter1/nurbsSphere2
+        weight: 0
+      - path: Bowtie
+        weight: 0
+      - path: clothingExport:polySurface1SmoothProxyGroup
+        weight: 0
+      - path: hairCurve1
+        weight: 0
+      - path: Human_character
+        weight: 0
+      - path: Human_character/pCylinder4
+        weight: 0
+      - path: Human_character/pCylinder4/transform8
+        weight: 0
+      - path: Human_character/polySurface13
+        weight: 0
+      - path: Human_character/polySurface13/transform7
+        weight: 0
+      - path: Human_character/polySurface14
+        weight: 0
+      - path: Human_character/polySurface18
+        weight: 0
+      - path: Lincoln_Controller
+        weight: 1
+      - path: Lincoln_Controller/FK_Controls
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle/FK_left_fingers
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle/FK_left_thumbbase
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle/FK_left_thumbbase/FK_left_thumbmid
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle/FK_right_fingers
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle/FK_right_thumbbase
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle/FK_right_thumbbase/FK_right_thumbmid
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/Neck
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/Neck/Hat
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Left_Leg_IK_Control
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Left_Leg_Pole
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Right_Leg_IK_Control
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Right_Leg_Pole
+        weight: 0
+      - path: Lincoln_Controller/IK_Joints1
+        weight: 0
+      - path: Lincoln_Controller/IK_Joints1/Left_Foot_IK
+        weight: 0
+      - path: Lincoln_Controller/IK_Joints1/Right_Foot_IK
+        weight: 0
+      - path: Lincoln_Controller/LincolnModel
+        weight: 0
+      - path: Lincoln_Controller/Skeleton1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_fingers 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_fingers 1/left_fingers_tip
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_thumb_base 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_thumb_base 1/left_thumb_middle
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_thumb_base 1/left_thumb_middle
+          1/left_thumb_tip 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/neck 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/neck 1/head_crown
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/neck 1/head_crown
+          1/head_hat_top 1
+        weight: 0
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_fingers 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_fingers 1/right_fingers_tip
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_thumb_base 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_thumb_base 1/right_thumb_middle
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_thumb_base 1/right_thumb_middle
+          1/right_thumb_tip 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1/left_leg_ankle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1/left_leg_ankle 1/Left_Foot_Toes
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1/left_leg_ankle 1/Left_Foot_Toes/Left_Foot_Tip
+        weight: 0
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1/Right_Foot_Heel
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1/Right_Foot_Heel/Right_Foot_Toes
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1/Right_Foot_Heel/Right_Foot_Toes/Right_Foot_Tip
+        weight: 0
+      - path: SuitModel
+        weight: 0
+      - path: Unrigged_character
+        weight: 0
+      - path: Unrigged_character/polySurface26
+        weight: 0
+      - path: Unrigged_hair
+        weight: 0
+      - path: Unrigged_hat
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
     isReadable: 1
@@ -354,834 +634,8 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human:
-    - boneName: stomach 1
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_leg_pelvis 1
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_leg_pelvis 1
-      humanName: RightUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_leg_knee 1
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_leg_knee 1
-      humanName: RightLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_leg_ankle 1
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_leg_ankle 1
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: joint1
-      humanName: Spine
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: base_chest
-      humanName: Chest
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: neck 1
-      humanName: Neck
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: head_crown 1
-      humanName: Head
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_shoulder 1
-      humanName: LeftUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_shoulder 1
-      humanName: RightUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_elbow 1
-      humanName: LeftLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_elbow 1
-      humanName: RightLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_wrist 1
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_wrist 1
-      humanName: RightHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Left_Foot_Toes
-      humanName: LeftToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Right_Foot_Toes
-      humanName: RightToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_fingers 1
-      humanName: Left Index Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_fingers_tip 1
-      humanName: Left Index Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_thumb_middle 1
-      humanName: Left Middle Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: left_thumb_tip 1
-      humanName: Left Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_thumb_middle 1
-      humanName: Right Middle Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_thumb_tip 1
-      humanName: Right Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_fingers 1
-      humanName: Right Ring Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: right_fingers_tip 1
-      humanName: Right Ring Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    skeleton:
-    - name: lincolnmkIV(Clone)
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: base_chest1
-      position: {x: -5.70332003, y: 4.01921082, z: .0130909234}
-      rotation: {x: -.494113386, y: -.50514555, z: .494785756, w: .50583297}
-      scale: {x: .99999994, y: 1, z: .99999994}
-      transformModified: 1
-    - name: left_shoulder
-      position: {x: -.0110299941, y: .0768166035, z: .572245598}
-      rotation: {x: .494449705, y: .505489409, z: -.494449705, w: .505489409}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_elbow
-      position: {x: -.658324897, y: -.0520905256, z: -.0432315469}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_wrist
-      position: {x: -.671473384, y: -.0180726051, z: 1.3038516e-08}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_knuckle
-      position: {x: -.302941799, y: -.000188589096, z: .0359683409}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_fingers
-      position: {x: -.185659051, y: 0, z: .0283000618}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_fingers_tip
-      position: {x: -.143315911, y: 1.1920929e-07, z: .0181951672}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_thumb_base
-      position: {x: .0721055269, y: -.0213382244, z: .146044433}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_thumb_middle
-      position: {x: -.0640468597, y: 0, z: .0774223581}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_thumb_tip
-      position: {x: -.0906815529, y: 0, z: .0240078717}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: neck
-      position: {x: .359292746, y: .0745262206, z: -9.05207125e-05}
-      rotation: {x: .494449705, y: .505489409, z: -.494449705, w: .505489409}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: head_crown
-      position: {x: .000891031406, y: 2.16479754, z: .0524574742}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: head_hat_top
-      position: {x: .0362842195, y: 1.7386837, z: -.0705491304}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_shoulder
-      position: {x: -.0110156508, y: .075259991, z: -.57277}
-      rotation: {x: .494449705, y: .505489409, z: -.494449705, w: .505489409}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_elbow
-      position: {x: .65800792, y: -.0520704985, z: -.0432310104}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_wrist
-      position: {x: .671473384, y: -.0180726051, z: 1.3038516e-08}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_knuckle
-      position: {x: .302941799, y: -.000188589096, z: .0359683409}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_fingers
-      position: {x: .185659051, y: 0, z: .0283000618}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_fingers_tip
-      position: {x: .143315911, y: 1.1920929e-07, z: .0181951672}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_thumb_base
-      position: {x: -.0681568384, y: -.0213382244, z: .146044433}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_thumb_middle
-      position: {x: .0600981712, y: 0, z: .0774223581}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_thumb_tip
-      position: {x: .111547947, y: -.00204229355, z: .0285543799}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: stomach
-      position: {x: -.979711175, y: 1.44660906e-16, z: 4.99904393e-16}
-      rotation: {x: .494449705, y: .505489409, z: -.494449705, w: .505489409}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_leg_pelvis
-      position: {x: -.28340137, y: -.523934245, z: .0367019922}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_leg_knee
-      position: {x: -.0363947973, y: -1.06771994, z: .0887869}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_leg_ankle
-      position: {x: .0318946205, y: -.833104432, z: -.0921898782}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_leg_toes
-      position: {x: -5.96046448e-08, y: -.216401935, z: .339864284}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_leg_foot_back
-      position: {x: 3.7252903e-08, y: -.0190029144, z: -.534543276}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_leg_toes_tip
-      position: {x: -0, y: -.0309541225, z: .233738393}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_leg_pelvis
-      position: {x: .283582389, y: -.526280522, z: .0368993133}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_leg_knee
-      position: {x: .0362726226, y: -1.06537414, z: .0885894075}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_leg_ankle
-      position: {x: -.0318946354, y: -.833104074, z: -.0921897069}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_leg_toes
-      position: {x: 5.96046448e-08, y: -.216401935, z: .339864284}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_leg_foot_back
-      position: {x: -5.21540642e-08, y: -.0190029144, z: -.534543276}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_leg_toes_tip
-      position: {x: -0, y: -.0309541225, z: .233738393}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: big_headed_characters
-      position: {x: 0, y: 2.39474559, z: -.0491224527}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Gamecharacter
-      position: {x: .0174228922, y: -2.39474559, z: .0491224527}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: nurbsSphere4
-      position: {x: -.455659211, y: 3.42520094, z: .65563345}
-      rotation: {x: .706928015, y: .0159004796, z: -.0159004796, w: .706928015}
-      scale: {x: .18669787, y: .0978573114, z: .195737511}
-      transformModified: 1
-    - name: nurbsSphere5
-      position: {x: .479267389, y: 3.42520094, z: .65563345}
-      rotation: {x: .706928015, y: .0159004796, z: -.0159004796, w: .706928015}
-      scale: {x: .18669787, y: .0978573114, z: .195737511}
-      transformModified: 1
-    - name: Gamecharacter1
-      position: {x: 4.99585533, y: -2.39474559, z: .0491224527}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: nurbsSphere1
-      position: {x: -.682741463, y: 3.80305433, z: .806893289}
-      rotation: {x: .706927955, y: -.0159013458, z: .0159013458, w: .706927955}
-      scale: {x: .300520867, y: .157517403, z: .315071642}
-      transformModified: 1
-    - name: nurbsSphere2
-      position: {x: .644283116, y: 3.80305433, z: .806893289}
-      rotation: {x: .706928015, y: .0159004796, z: -.0159004796, w: .706928015}
-      scale: {x: .300520867, y: .157517403, z: .315071642}
-      transformModified: 1
-    - name: Bowtie
-      position: {x: -4.70698643, y: -5.32355738, z: .317228556}
-      rotation: {x: -.238203719, y: 0, z: -0, w: .971215248}
-      scale: {x: .0522487573, y: .0522487573, z: .00475020614}
-      transformModified: 1
-    - name: clothingExport:polySurface1SmoothProxyGroup
-      position: {x: 0, y: 34.492939, z: -9.27070522}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: hairCurve1
-      position: {x: -2.56258464, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Human_character
-      position: {x: 0, y: .0887933969, z: .121774971}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: pCylinder4
-      position: {x: -2.43291259, y: 1.62180877, z: -.167829722}
-      rotation: {x: 0, y: -0, z: -.707106829, w: .707106829}
-      scale: {x: .0853536949, y: .281413466, z: .193162158}
-      transformModified: 1
-    - name: transform8
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: polySurface13
-      position: {x: -0, y: -.0887933969, z: -.121774971}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: transform7
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: polySurface14
-      position: {x: -5.90812778, y: -9.59042645, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: polySurface18
-      position: {x: -13.1870031, y: 2.70884752, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: -1, y: 1, z: 1}
-      transformModified: 1
-    - name: Lincoln_Controller
-      position: {x: 0, y: .266623467, z: 0}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_Controls
-      position: {x: -0, y: -.266623467, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Stomach
-      position: {x: -.00141661486, y: 3.20732021, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_left_Shoulder
-      position: {x: -.570933223, y: .802559197, z: -.0631722212}
-      rotation: {x: -.113312438, y: .199069276, z: .461709619, w: .856945693}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_left_elbow
-      position: {x: -.658324897, y: -.0520905256, z: -.0432315469}
-      rotation: {x: -.000207023419, y: .311110467, z: .0106710037, w: .950313866}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_left_wrist
-      position: {x: -.671473384, y: -.0180726051, z: 1.3038516e-08}
-      rotation: {x: 0, y: .0836815089, z: -0, w: .996492565}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_left_knuckle
-      position: {x: -.302941799, y: -.000188589096, z: .0359683409}
-      rotation: {x: 0, y: 0, z: .218427733, w: .975853145}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_left_fingers
-      position: {x: -.185659051, y: 0, z: .0283000618}
-      rotation: {x: 0, y: 0, z: .327084035, w: .944995284}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_left_thumbbase
-      position: {x: .0721055269, y: -.0213382244, z: .146044433}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_left_thumbmid
-      position: {x: -.0640468597, y: 0, z: .0774223581}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_right_Shoulder
-      position: {x: .595136642, y: .79183501, z: -.0910792574}
-      rotation: {x: .0080608651, y: .0103920046, z: -.612854064, w: .790086687}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_right_elbow
-      position: {x: .632258654, y: -.0290940627, z: .0910792574}
-      rotation: {x: 0, y: -.138025433, z: -0, w: .990428686}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_right_wrist
-      position: {x: .667013347, y: -.0248540267, z: 0}
-      rotation: {x: 0, y: .0937753916, z: -0, w: .995593369}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_right_knuckle
-      position: {x: .311609685, y: .00583866518, z: -.0743362233}
-      rotation: {x: 0, y: -0, z: -.324691474, w: .945820034}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_right_fingers
-      position: {x: .182637498, y: -.00302197109, z: .0393394344}
-      rotation: {x: 0, y: -0, z: -.466038406, w: .884764493}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_right_thumbbase
-      position: {x: -.0698960051, y: 0, z: .152606279}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: FK_right_thumbmid
-      position: {x: .0626405403, y: 0, z: .0768233091}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Neck
-      position: {x: .00141659996, y: 1.17274117, z: -.0534847155}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Hat
-      position: {x: .000891031406, y: 2.16479754, z: .0524574742}
-      rotation: {x: .0210169572, y: -0, z: -0, w: .999779105}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Ik_Controls
-      position: {x: -0, y: -.266623467, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Left_Leg_IK_Control
-      position: {x: -.302004814, y: 1.38293219, z: -.542002439}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Left_Leg_Pole
-      position: {x: -.764644802, y: 1.45007932, z: 1.50449467}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Right_Leg_IK_Control
-      position: {x: .287930965, y: .680722415, z: .54320097}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Right_Leg_Pole
-      position: {x: .27974838, y: 1.45007932, z: 2.0478394}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: IK_Joints1
-      position: {x: -0, y: -.266623467, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Left_Foot_IK
-      position: {x: -.302004814, y: 1.38293219, z: -.542002439}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Right_Foot_IK
-      position: {x: .287930965, y: .680722415, z: .54320097}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: LincolnModel
-      position: {x: -0, y: -.266623467, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Skeleton1
-      position: {x: -0, y: -.266623467, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: stomach 1
-      position: {x: -2.94148922e-05, y: 2.71481872, z: -.00853915513}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: joint1
-      position: {x: -.00138719997, y: .167581797, z: .00853915513}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: base_chest
-      position: {x: .0014166144, y: .811890602, z: .0130909234}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_shoulder 1
-      position: {x: -.572349787, y: -.00933170319, z: -.0762631372}
-      rotation: {x: 3.09057509e-06, y: .0278999656, z: -.017785307, w: .999452531}
-      scale: {x: .99999994, y: 1, z: 1}
-      transformModified: 1
-    - name: left_elbow 1
-      position: {x: -.658324718, y: -.0520904064, z: -.0818290785}
-      rotation: {x: .000501300616, y: -.0160025582, z: .00122823706, w: .999871075}
-      scale: {x: 1, y: .99999994, z: .999999821}
-      transformModified: 1
-    - name: left_wrist 1
-      position: {x: -.671473503, y: -.0180723667, z: .0385975391}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: .99999994, z: 1}
-      transformModified: 1
-    - name: left_knuckle 1
-      position: {x: -.302941799, y: -.000189304352, z: .0359683558}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: .99999994, z: 1.00000012}
-      transformModified: 1
-    - name: left_fingers 1
-      position: {x: -.18565917, y: 4.76837158e-07, z: .0283000544}
-      rotation: {x: .00275575835, y: .223817855, z: .0217047073, w: .97438544}
-      scale: {x: .99999994, y: 1.00000012, z: .999999881}
-      transformModified: 1
-    - name: left_fingers_tip 1
-      position: {x: -.143315792, y: 0, z: .0181951597}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .999999881, y: .99999994, z: 1}
-      transformModified: 1
-    - name: left_thumb_base 1
-      position: {x: .0721056461, y: -.0213382244, z: .146044403}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1.00000012, y: 1.00000012, z: .99999994}
-      transformModified: 1
-    - name: left_thumb_middle 1
-      position: {x: -.0640468597, y: -2.38418579e-07, z: .0774223506}
-      rotation: {x: .00488952128, y: .155581757, z: .0184677783, w: .987638354}
-      scale: {x: 1, y: 1.00000012, z: .999999881}
-      transformModified: 1
-    - name: left_thumb_tip 1
-      position: {x: -.0906815529, y: 0, z: .0240078568}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: neck 1
-      position: {x: -1.44354999e-08, y: .360850334, z: -.0665756389}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: head_crown 1
-      position: {x: .000891031348, y: 2.16479778, z: .0524574742}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: head_hat_top 1
-      position: {x: .0362842232, y: 1.7386837, z: -.0705491304}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_shoulder 1
-      position: {x: .572666764, y: 0, z: -.0762636811}
-      rotation: {x: -3.5035664e-06, y: -.0366947874, z: .020161435, w: .999123156}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_elbow 1
-      position: {x: .658008099, y: -.0520706177, z: -.0946567059}
-      rotation: {x: .00118585024, y: .0350689963, z: -.00315964967, w: .999379277}
-      scale: {x: 1.00000012, y: 1, z: 1}
-      transformModified: 1
-    - name: right_wrist 1
-      position: {x: .671473384, y: -.0180726051, z: .0514257103}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .999999881, y: .99999994, z: 1}
-      transformModified: 1
-    - name: right_knuckle 1
-      position: {x: .302941561, y: -.000188589096, z: .0359683409}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1.00000024, y: 1.00000036, z: 1}
-      transformModified: 1
-    - name: right_fingers 1
-      position: {x: .185658932, y: 0, z: .0283000618}
-      rotation: {x: .00275544543, y: -.223817483, z: -.0217033178, w: .97438556}
-      scale: {x: .999999881, y: .999999881, z: 1}
-      transformModified: 1
-    - name: right_fingers_tip 1
-      position: {x: .143315792, y: 2.38418579e-07, z: .0181951746}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: right_thumb_base 1
-      position: {x: -.0681569576, y: -.0213382244, z: .146044433}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .999999881, y: .999999881, z: 1}
-      transformModified: 1
-    - name: right_thumb_middle 1
-      position: {x: .0600981712, y: 0, z: .0774223506}
-      rotation: {x: .000658968871, y: -.159426257, z: -.0139774894, w: .987110674}
-      scale: {x: 1.00000012, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: right_thumb_tip 1
-      position: {x: .111547947, y: -.00204229355, z: .0285543799}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1.00000012, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: left_leg_pelvis 1
-      position: {x: -.2834014, y: -.523934126, z: .0367019922}
-      rotation: {x: 0, y: 3.3170254e-06, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: left_leg_knee 1
-      position: {x: -.0363947973, y: -1.06771994, z: .0887869149}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1.00000012, y: 1.00000024, z: 1.00000012}
-      transformModified: 1
-    - name: left_leg_ankle 1
-      position: {x: .0318945497, y: -.833104372, z: -.0921898782}
-      rotation: {x: 0, y: -3.3170254e-06, z: 0, w: 1}
-      scale: {x: 1, y: .999999881, z: 1}
-      transformModified: 1
-    - name: Left_Foot_Toes
-      position: {x: .00981322117, y: -.219563484, z: .341687739}
-      rotation: {x: 1.16403326e-29, y: 3.62458061e-15, z: -3.21149853e-15, w: 1}
-      scale: {x: 1, y: 1, z: 1.00000012}
-      transformModified: 1
-    - name: Left_Foot_Tip
-      position: {x: -.00681036897, y: -.0166759491, z: .204718769}
-      rotation: {x: -.0452531762, y: -.705657244, z: -.0452531762, w: .705657244}
-      scale: {x: 1.00000012, y: 1.00000012, z: 1}
-      transformModified: 1
-    - name: right_leg_pelvis 1
-      position: {x: .28358236, y: -.52628088, z: .0368993133}
-      rotation: {x: 0, y: 1.82500397e-08, z: 0, w: 1}
-      scale: {x: .99999994, y: .99999994, z: .99999994}
-      transformModified: 1
-    - name: right_leg_knee 1
-      position: {x: .0362726413, y: -1.06537366, z: .0885894001}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: .99999994, y: 1.00000012, z: 1.00000012}
-      transformModified: 1
-    - name: right_leg_ankle 1
-      position: {x: -.0318946503, y: -.833104134, z: -.0921896994}
-      rotation: {x: 0, y: -1.82500397e-08, z: 0, w: 1}
-      scale: {x: .99999994, y: 1, z: .999999881}
-      transformModified: 1
-    - name: Right_Foot_Heel
-      position: {x: .0014814731, y: -.233000994, z: -.00936444104}
-      rotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-      scale: {x: 1.00000012, y: 1, z: 1.00000012}
-      transformModified: 1
-    - name: Right_Foot_Toes
-      position: {x: -.33675614, y: 2.38418579e-07, z: 2.06243485e-08}
-      rotation: {x: -3.46944695e-18, y: -.707106829, z: 6.9388939e-18, w: .707106829}
-      scale: {x: 1, y: 1, z: .999999881}
-      transformModified: 1
-    - name: Right_Foot_Tip
-      position: {x: .00199368619, y: 9.72741033e-19, z: .204235017}
-      rotation: {x: -.0201783665, y: -.706818819, z: -.0201783665, w: .706818819}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: SuitModel
-      position: {x: -4.72507763, y: 6.22149229, z: .0466295853}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: .10844288, y: .10844288, z: .10844288}
-      transformModified: 1
-    - name: Unrigged_character
-      position: {x: 7.10321846e-09, y: 3.28397894, z: -4.02894163}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: polySurface26
-      position: {x: -7.10321846e-09, y: -3.28397894, z: -.0627303421}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Unrigged_hair
-      position: {x: -6.17102623, y: -12.2992725, z: 0}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Unrigged_hat
-      position: {x: -6.10412931, y: -5.37989759, z: -.0715763718}
-      rotation: {x: 0, y: -0, z: 0, w: 1}
-      scale: {x: .470931619, y: .50456959, z: .459897965}
-      transformModified: 1
+    human: []
+    skeleton: []
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -1191,5 +645,5 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 1
   userData: 

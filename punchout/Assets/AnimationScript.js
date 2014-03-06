@@ -1,13 +1,16 @@
 ﻿#pragma strict
 var isMoving = false;
 var inAir = false;
-var lincoln : Transform;
-var gStyle : GUIStyle;
-var character : GameObject;
+
 var footsteps : AudioClip;
-var distToGround : float;
-var score;
-var gStyle2 : GUIStyle;
+var moveSpeed = 5.0;
+
+var left : KeyCode;
+var right : KeyCode;
+var jump : KeyCode;
+
+var leftright : String;
+//public var target : Transform;
 
 //animation.wrapMode = WrapMode.Loop;
 
@@ -15,8 +18,7 @@ function Start ()
 {
 	audio.clip = footsteps;
 	audio.loop = true;
-	distToGround = collider.bounds.extents.y;
-	//animation("Run").wrapMode = WrapMode.Loop;
+	//animation("running").wrapMode = WrapMode.Loop;
 }
 
 function Update () {
@@ -26,16 +28,24 @@ function Update () {
 	//if(Input.GetKey("mouse 0"))
 		//animation.Play("chop");
 
+		
 	
-	if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+	if (Input.GetKey(left))
 	{
-		animation.Play("Run");
+		transform.eulerAngles.y = -90;
+		                               
+		                               
+		animation.Play(leftright);
 		//animation.wrapMode = WrapMode.Loop;
 		isMoving = true;
-
+		transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
+		
 			
-		if(Input.GetKey(KeyCode.Space))
+		if(Input.GetKey(jump))
+		{
 			audio.Stop();
+			
+		}
 			
 		else if(!audio.isPlaying)
 			audio.Play();
@@ -45,31 +55,41 @@ function Update () {
 		//runSound();
 		
 	}
-	
-
-
-	if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+	else if (Input.GetKey(right))
 	{
-		animation.Stop("Run");
+		transform.eulerAngles.y = 90;
+		animation.Play(leftright);
+		transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
+		
+		if(Input.GetKey(jump))
+		{
+			audio.Stop();
+
+		}
+			
+		else if(!audio.isPlaying)
+			audio.Play();
+	}
+	
+	if(Input.GetKey(KeyCode.Space))
+		{
+			
+		}
+
+
+	if(Input.GetKeyUp(left) || Input.GetKeyUp(right))
+	{
+		animation.Stop(leftright);
 		//animation.CrossFade("standing");
 		//animation.wrapMode = WrapMode.Once;
-		animation.Play("standing");
+		//animation.Play("standing");
 		audio.Stop();
 		isMoving = false;
 		//runSound();
 		//audio.Stop();
 	}
-
+	
+	
 }
 
-
-
-
-
-function OnGUI () 
-{
-		GUI.Box(Rect(0,Screen.height/1.07,Screen.width,Screen.height/15),"POPULAR VOTE METER", gStyle);
-		GUI.Box(Rect(0,Screen.height/1.02,Screen.width,Screen.height/15),"score1", gStyle2);
-
-}
 

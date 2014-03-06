@@ -26,6 +26,8 @@
  
 var spawnPoint : Transform; // The character will spawn here
 var movement : Movement;
+    var jumpKey : KeyCode;
+
  
 private var controller : CharacterController;
  
@@ -89,7 +91,7 @@ function FixedUpdate() {
 function Update() {
     // GetAxisRaw("Horizontal") will return either -1 or 1 while the left or right input is depressed
     // Otherwise, GetAxisRaw("Horizontal") returns 0 for no input
-    movement.horizontalDirection = (movement.enabled) ? Input.GetAxisRaw("Horizontal") : 0;
+    //movement.horizontalDirection = (movement.enabled) ? Input.GetAxisRaw("Horizontal") : 0;
     if (movement.horizontalDirection != 0) movement.direction = Vector3(movement.horizontalDirection, 0, 0);
     MoveCharacter();
 }
@@ -117,8 +119,8 @@ function ApplyMovement() {
         case true:
             movement.usedExtraJump = false;
             if (movement.enabled) {
-                movement.offset = Vector3(Input.GetAxis("Horizontal"), 0, 0) * movement.walkSpeed;
-                if (Input.GetButtonDown("Jump")) ApplyJump();
+                //movement.offset = Vector3(Input.GetAxis("Horizontal"), 0, 0) * movement.walkSpeed;
+                if (Input.GetKey(jumpKey)) ApplyJump();
             } else {
                 movement.offset = Vector3.zero;
             }
@@ -127,10 +129,10 @@ function ApplyMovement() {
         // The character is midair
         case false:
             if (movement.enabled) {
-                movement.offset.x = Input.GetAxis("Horizontal") * movement.walkSpeed;
+                //movement.offset.x = Input.GetAxis("Horizontal") * movement.walkSpeed;
                 // Apply an extra jump if the jump input button is pressed a second time
                 // The final jump height will be greatest at the apex of the first jump
-                if (Input.GetButtonDown("Jump") && ! movement.usedExtraJump) {
+                if (Input.GetKey(jumpKey) && ! movement.usedExtraJump) {
                     movement.usedExtraJump = true;
                     ApplyJump();
                 }
