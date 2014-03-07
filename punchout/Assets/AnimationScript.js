@@ -10,6 +10,7 @@ var right : KeyCode;
 var jump : KeyCode;
 
 var leftright : String;
+var stand : String;
 //public var target : Transform;
 
 //animation.wrapMode = WrapMode.Loop;
@@ -82,7 +83,7 @@ function Update () {
 		animation.Stop(leftright);
 		//animation.CrossFade("standing");
 		//animation.wrapMode = WrapMode.Once;
-		//animation.Play("standing");
+		animation.Play(stand);
 		audio.Stop();
 		isMoving = false;
 		//runSound();

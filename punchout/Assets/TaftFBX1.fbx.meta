@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 78cea5611907777419ed2f7942a28e46
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: base_chest1
     100002: head_crown
@@ -108,7 +108,7 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 1
       lastFrame: 10
-      wrapMode: 0
+      wrapMode: 1
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -210,7 +210,7 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 10
       lastFrame: 20
-      wrapMode: 0
+      wrapMode: 1
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -649,4 +649,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 1
+  additionalBone: 0
   userData: 

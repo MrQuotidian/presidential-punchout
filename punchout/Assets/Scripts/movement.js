@@ -48,6 +48,7 @@ class Movement {
     var rotate : boolean = false; // Should the character rotate?
     var rotateIn3D : boolean = false; // Should the character be rotated in 3D?
     var rotationSmoothing : float = 10; // Rotation Smoothing speed (for "Rotate In 3D")
+    var gravOffset : float = 20;
  
     /*******************************
      * NonSerialized variables
@@ -161,5 +162,6 @@ function ApplyRotation() {
 }
  
 function ApplyGravity () {
-    movement.offset.y -= movement.gravity * Time.deltaTime;
+	if(!controller.isGrounded)
+    	movement.offset.y -= (movement.gravity) * Time.deltaTime;
 }
