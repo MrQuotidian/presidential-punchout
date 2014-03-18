@@ -14,10 +14,10 @@ function Update () {
 function OnTriggerEnter(collision : Collider) 
 {
 
-Debug.Log("enter");
+//Debug.Log("enter");
 
 	IsGrounded = false;
-	target.audio.enabled = true;
+	//target.audio.enabled = true;
 
 //If you want to have this only trigger once
 //Other code to do stuff on trigger goes here. You could:
@@ -29,10 +29,10 @@ Debug.Log("enter");
 
 function OnTriggerExit(collision : Collider) 
 {
-Debug.Log("exit");
+//Debug.Log("exit");
 
 	IsGrounded = true;
-	target.audio.enabled = false;
+	//target.audio.enabled = false;
 //If you want to have this only trigger once
 //Other code to do stuff on trigger goes here. You could:
 // 1. Increase a variable to keep track of score
