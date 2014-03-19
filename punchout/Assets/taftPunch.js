@@ -4,10 +4,14 @@ var attack1 : KeyCode;
 var attack2 : KeyCode;
 var attack3 : KeyCode;
 var particle : ParticleSystem;
-var attacking = false;
+//var attacking = false;
 var cube : GameObject;
 var hand : Transform;
 var cubeClone : Rigidbody;
+var attack1buf = false;
+var attack2buf = false;
+var attack3buf = false;
+
 
 function Start () {
 
@@ -20,10 +24,10 @@ function Update () {
 	//otherScript = GetComponent("popVoteMeter"); 
     //Debug(otherScript.hit);
 	
-	if(Input.GetKeyDown(attack1))
+	if(Input.GetKeyDown(attack1) && attack1buf == false)
 	{
 
-		attacking = true;
+		//attacking = true;
 		
 		animation.Stop("walking");
 		//transform.Translate(0, 0, 0);
@@ -32,7 +36,9 @@ function Update () {
 		//cubeClone.position = Vector3(0,4,0);
 		cubeClone.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
-		WaitAndDestroy(0.3f, cubeClone);
+		attack1buf = true;
+		WaitAndDestroy(0.3f, .05f, cubeClone);//You can use this move many times a second.
+		
     	//Destroy(cubeClone.gameObject);
 		
 		//particle.Emit(2);
@@ -44,9 +50,9 @@ function Update () {
 		
 
 	}
-	if(Input.GetKeyDown(attack2))
+	if(Input.GetKeyDown(attack2) && attack1buf == false)
 	{
-		attacking = true;
+		//attacking = true;
 		//particle.Emit(2);
 		animation.Stop("walking");
 		//transform.Translate(0, 0, 0);
@@ -55,13 +61,14 @@ function Update () {
 		//cubeClone.position = Vector3(0,4,0);
 		cubeClone.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
-		WaitAndDestroy(0.3f, cubeClone);
+		attack1buf = true;
+		WaitAndDestroy(0.3f, .5f, cubeClone);
 		
 	}
 	
-	if(Input.GetKeyDown(attack3))
+	if(Input.GetKeyDown(attack3) && attack1buf == false)
 	{
-		attacking = true;
+		//attacking = true;
 		animation.Stop("walking");
 		//particle.Emit(2);
 
@@ -72,7 +79,8 @@ function Update () {
 
 		cubeClone.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
-		WaitAndDestroy(0.3f, cubeClone);
+		attack1buf = true;
+		WaitAndDestroy(0.3f, .5f, cubeClone);
 		
 
 	}
@@ -91,9 +99,13 @@ function OnCollisionEnter(player : Collision)
     
 }
 
-function WaitAndDestroy(delayd : float, obj : Rigidbody){
+function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
 
 		yield WaitForSeconds(delayd);
 		Destroy (obj.gameObject);
+		yield(WaitForSeconds(delay2));
+		attack1buf = false;
+		//attack2buf = false;
+		//attack3buf = false;
 	
 }

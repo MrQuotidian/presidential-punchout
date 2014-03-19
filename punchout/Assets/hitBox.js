@@ -17,7 +17,7 @@ function OnCollisionEnter(player : Collision)
 	{
 		Debug.Log("hit p1");
 		Destroy(this);
-    	popVoteMeter.hit += .1f;
+    	popVoteMeter.hit2 += .1f;
 		
 	}
 	else if(player.gameObject.name == "TaftFBX1")

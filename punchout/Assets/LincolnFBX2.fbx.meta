@@ -84,6 +84,7 @@ ModelImporter:
     7400002: punchstring2
     7400004: punchstring3
     7400006: running
+    7400008: idleL
     9500000: //RootNode
     11100000: //RootNode
     13700000: LincolnModel
@@ -413,6 +414,108 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 77
       lastFrame: 101
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: LincolnModel
+        weight: 1
+      - path: Skeleton1
+        weight: 1
+      - path: Skeleton1/stomach
+        weight: 1
+      - path: Skeleton1/stomach/joint1
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/neck
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/neck/head_crown
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/neck/head_crown/head_hat_top
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Skeleton1/stomach/joint1/base_chest/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      - path: Skeleton1/stomach/left_leg_pelvis
+        weight: 1
+      - path: Skeleton1/stomach/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Skeleton1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Skeleton1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/Left_Foot_Toes
+        weight: 1
+      - path: Skeleton1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/Left_Foot_Toes/Left_Foot_Tip
+        weight: 1
+      - path: Skeleton1/stomach/right_leg_pelvis
+        weight: 1
+      - path: Skeleton1/stomach/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Skeleton1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Skeleton1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/Right_Foot_Heel
+        weight: 1
+      - path: Skeleton1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/Right_Foot_Heel/Right_Foot_Toes
+        weight: 1
+      - path: Skeleton1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/Right_Foot_Heel/Right_Foot_Toes/Right_Foot_Tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idleL
+      takeName: Take 001
+      firstFrame: 52
+      lastFrame: 58
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
