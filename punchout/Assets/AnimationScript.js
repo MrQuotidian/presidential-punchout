@@ -18,6 +18,8 @@ var platform3 : Transform;
 var player : Collider;
 var onFloor = false;
 
+var floor : GameObject;
+
 //animation.wrapMode = WrapMode.Loop;
 
 function Start ()
@@ -109,14 +111,17 @@ function Update () {
 
 function OnTriggerEnter (other : Collider) {
 	
-	if(other.gameObject.name == "floorsoundTrig")
+	if(other.gameObject.name == floor.name)
 		onFloor = true;
+		
+	//Debug.Log("entered the floor");
 }
 
 function OnTriggerExit (other : Collider) {
 	
-	if(other.gameObject.name == "floorsoundTrig")
+	if(other.gameObject.name == floor.name)
 		onFloor = false;
+	//Debug.Log("exited the floor");
 }
 
 
