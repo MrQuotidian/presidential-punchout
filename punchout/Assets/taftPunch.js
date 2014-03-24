@@ -6,8 +6,12 @@ var attack3 : KeyCode;
 var particle : ParticleSystem;
 //var attacking = false;
 var cube : GameObject;
+var cube2 : GameObject;
+var cube3 : GameObject;
 var hand : Transform;
 var cubeClone : Rigidbody;
+var cubeClone2 : Rigidbody;
+var cubeClone3 : Rigidbody;
 var attack1buf = false;
 var attack2buf = false;
 var attack3buf = false;
@@ -32,8 +36,9 @@ function Update () {
 		animation.Stop("walking");
 		//transform.Translate(0, 0, 0);
 		animation.CrossFade("punchstring1");
-		cubeClone = Instantiate(cube, hand.position, Quaternion.identity).rigidbody;
+		cubeClone = Instantiate(cube, hand.position, transform.rotation).rigidbody;
 		//cubeClone.position = Vector3(0,4,0);
+		//cubeClone.transform.Rotate(Vector3(0, 90, 0));
 		cubeClone.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
 		attack1buf = true;
@@ -57,12 +62,13 @@ function Update () {
 		animation.Stop("walking");
 		//transform.Translate(0, 0, 0);
 		animation.CrossFade("punchstring2");
-		cubeClone = Instantiate(cube, hand.position, Quaternion.identity).rigidbody;
+		cubeClone2 = Instantiate(cube2, hand.position, transform.rotation).rigidbody;
 		//cubeClone.position = Vector3(0,4,0);
-		cubeClone.velocity = transform.forward * 20;
+		
+		cubeClone2.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
 		attack1buf = true;
-		WaitAndDestroy(0.3f, .5f, cubeClone);
+		WaitAndDestroy(0.2f, .5f, cubeClone2);
 		
 	}
 	
@@ -74,13 +80,13 @@ function Update () {
 
 		//transform.Translate(0, 0, 0);
 		animation.CrossFade("punchstring3");
-		cubeClone = Instantiate(cube, hand.position, Quaternion.identity).rigidbody;
+		cubeClone3 = Instantiate(cube3, hand.position, transform.rotation).rigidbody;
 		//cubeClone.position = Vector3(0,4,0);
 
-		cubeClone.velocity = transform.forward * 20;
+		cubeClone3.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
 		attack1buf = true;
-		WaitAndDestroy(0.3f, .5f, cubeClone);
+		WaitAndDestroy(0.1f, .5f, cubeClone3);
 		
 
 	}
