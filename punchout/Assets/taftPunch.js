@@ -3,6 +3,8 @@
 var attack1 : KeyCode;
 var attack2 : KeyCode;
 var attack3 : KeyCode;
+var left : KeyCode;
+var right : KeyCode;
 var particle : ParticleSystem;
 //var attacking = false;
 var cube : GameObject;
@@ -15,6 +17,7 @@ var cubeClone3 : Rigidbody;
 var attack1buf = false;
 var attack2buf = false;
 var attack3buf = false;
+var knockback = 100;
 
 
 function Start () {
@@ -28,7 +31,7 @@ function Update () {
 	//otherScript = GetComponent("popVoteMeter"); 
     //Debug(otherScript.hit);
 	
-	if(Input.GetKeyDown(attack1) && attack1buf == false)
+	if(Input.GetKeyDown(attack1) && attack1buf == false  && !Input.GetKey(left) && !Input.GetKey(right))
 	{
 
 		//attacking = true;
@@ -55,7 +58,7 @@ function Update () {
 		
 
 	}
-	if(Input.GetKeyDown(attack2) && attack1buf == false)
+	if(Input.GetKeyDown(attack2) && attack1buf == false && !Input.GetKey(left) && !Input.GetKey(right))
 	{
 		//attacking = true;
 		//particle.Emit(2);
@@ -72,7 +75,7 @@ function Update () {
 		
 	}
 	
-	if(Input.GetKeyDown(attack3) && attack1buf == false)
+	if(Input.GetKeyDown(attack3) && attack1buf == false && !Input.GetKey(left) && !Input.GetKey(right))
 	{
 		//attacking = true;
 		animation.Stop("walking");
@@ -94,10 +97,39 @@ function Update () {
 
 function OnCollisionEnter(player : Collision)
 {
+//Debug.Log("boom y " + player.transform.rotation.y);
+//Debug.Log("parent y" + transform.parent.rotation.y);
+//Destroy(player.gameObject);
+//Debug.Log("NEED TO MOVE BACK NOW " + player.gameObject.name);
+if(player.transform.rotation.y < 0 && transform.parent.rotation.y < 0)
+{
+//	Debug.Log("first one");
+	//transform.Translate(Vector3(0, 0, knockback) * Time.deltaTime);
+		transform.parent.transform.Translate(Vector3(0, 0, knockback) * Time.deltaTime);
 
-//Debug.Log("The object hit was: " + player.gameObject.name);
-	
-		
+}
+else if(player.transform.rotation.y > 0 && transform.parent.rotation.y < 0)
+{
+//	Debug.Log("first three");
+	//transform.Translate(Vector3(0, 0, knockback) * Time.deltaTime);
+		transform.parent.transform.Translate(Vector3(0, 0, -knockback) * Time.deltaTime);
+
+}
+else if(player.transform.rotation.y < 0 && transform.parent.rotation.y > 0)
+{
+//			Debug.Log("first two");
+
+		transform.parent.transform.Translate(Vector3(0, 0, -knockback) * Time.deltaTime);
+
+}
+else if(player.transform.rotation.y > 0 && transform.parent.rotation.y > 0)
+{
+//			Debug.Log("first two");
+
+		transform.parent.transform.Translate(Vector3(0, 0, -knockback) * Time.deltaTime);
+
+}
+
 	//Destroy(player.gameObject);
 
     //Debug.Log("Collision Detected");

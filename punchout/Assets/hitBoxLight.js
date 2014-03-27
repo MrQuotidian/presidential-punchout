@@ -18,13 +18,24 @@ Debug.Log("The object hit was: " + player.gameObject.name);
 		Debug.Log("hit p1");
 		Destroy(this);
     	popVoteMeter.hit2 += .01f;
-		
+    	if(popVoteMeter.hit > 0)
+    		popVoteMeter.hit -= .01f;
+    	else
+    	{
+    		popVoteMeter.hit = 0;
+    	}
 	}
 	else if(player.gameObject.name == "TaftFBX1")
 	{
 		Debug.Log("hit p2");
 		Destroy(this);
 		popVoteMeter.hit += .01f;
+		if(popVoteMeter.hit2 > 0)
+    		popVoteMeter.hit2 -= .01f;
+    	else
+    	{
+    		popVoteMeter.hit2 = 0;
+    	}
 	}
     //Debug.Log("Collision Detected");
  
