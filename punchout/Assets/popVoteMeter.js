@@ -8,7 +8,8 @@ var progressBarEmpty : Texture2D;
 var progressBarFull : Texture2D;
 public static var hit : float;
 public static var hit2 : float;
- 
+
+
 function OnGUI()
 {
 
@@ -16,7 +17,8 @@ function OnGUI()
     GUI.BeginGroup (new Rect (pos.x, pos.y, Screen.width, 60));
         GUI.Box (Rect (0,0, Screen.width, 30),progressBarEmpty);
  		GUI.Box (Rect (0,30, Screen.width, 30),progressBarEmpty);
- 		
+ 		GUI.Label(Rect(0, 0, Screen.width, 30), "Lincoln");
+ 		GUI.Label(Rect(0, 30, Screen.width, 30), "Taft");
         // draw the filled-in part:
         GUI.BeginGroup (new Rect (0, 0, Screen.width * barDisplay, 30));
             GUI.Box (Rect (0,0, Screen.width, 30),progressBarFull);

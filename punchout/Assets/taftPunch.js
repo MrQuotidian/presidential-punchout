@@ -17,7 +17,7 @@ var cubeClone3 : Rigidbody;
 var attack1buf = false;
 var attack2buf = false;
 var attack3buf = false;
-var knockback = 100;
+var knockback = 1000;
 
 
 function Start () {
