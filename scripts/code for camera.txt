@@ -1,0 +1,6 @@
+var abHeading: Vector3 = b.position - a.position;
+var perp: Vector3 = Vector3.Cross(abHeading, Vector3.up);
+var halfway: Vector3 = (a.position + b.position) * 0.5;
+var dist: float = Vector3.Distance(a.position, b.position);
+var distScale: float = <found by experimentation, but start with 1>;
+camera.transform.position = halfway + perp.normalized * dist * distScale;
