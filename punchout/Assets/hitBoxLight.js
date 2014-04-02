@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+//var wins : GUIText;
+
 function Start () {
 
 }
@@ -11,7 +13,7 @@ function Update () {
 function OnCollisionEnter(player : Collision)
 {
 
-Debug.Log("The object hit was: " + player.gameObject.name);
+//Debug.Log("The object hit was: " + player.gameObject.name);
 	
 	if(player.gameObject.name == "LincolnFBX2")
 	{
@@ -37,6 +39,10 @@ Debug.Log("The object hit was: " + player.gameObject.name);
     		popVoteMeter.hit2 = 0;
     	}
 	}
+	
+
+
+
     //Debug.Log("Collision Detected");
  
     

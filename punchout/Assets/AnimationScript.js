@@ -24,8 +24,8 @@ var floor : GameObject;
 
 function Start ()
 {
-	audio.clip = footsteps;
-	audio.loop = true;
+	//audio.clip = footsteps;
+	//audio.loop = true;
 	//animation("running").wrapMode = WrapMode.Loop;
 }
 
@@ -100,10 +100,10 @@ function Update () {
 		//animation.CrossFade("standing");
 		//animation.wrapMode = WrapMode.Once;
 		animation.Play(stand);
-		audio.Stop();
+		//audio.Stop();
 		//isMoving = false;
 		//runSound();
-		//audio.Stop();
+		audio.Stop();
 	}
 	
 	

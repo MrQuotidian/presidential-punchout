@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 077eafac11a4d1b4aaafed47b4021952
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - progressBarEmpty: {instanceID: 0}
+  - progressBarFull: {instanceID: 0}
+  - wincond: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

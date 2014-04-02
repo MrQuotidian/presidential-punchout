@@ -19,6 +19,13 @@ var attack2buf = false;
 var attack3buf = false;
 var knockback = 1000;
 
+var jab : AudioClip;
+var upper : AudioClip;
+var lefthook : AudioClip;
+var righthook : AudioClip;
+var reach : AudioClip;
+var footsteps : AudioClip;
+
 
 function Start () {
 
@@ -39,14 +46,17 @@ function Update () {
 		animation.Stop("walking");
 		//transform.Translate(0, 0, 0);
 		animation.CrossFade("punchstring1");
+		audio.clip = jab;
+		audio.Play();
 		cubeClone = Instantiate(cube, hand.position, transform.rotation).rigidbody;
 		//cubeClone.position = Vector3(0,4,0);
 		//cubeClone.transform.Rotate(Vector3(0, 90, 0));
 		cubeClone.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
+		//audio.Stop();
 		attack1buf = true;
 		WaitAndDestroy(0.3f, .05f, cubeClone);//You can use this move many times a second.
-		
+
     	//Destroy(cubeClone.gameObject);
 		
 		//particle.Emit(2);
@@ -65,13 +75,19 @@ function Update () {
 		animation.Stop("walking");
 		//transform.Translate(0, 0, 0);
 		animation.CrossFade("punchstring2");
+		audio.clip = reach;
+		audio.Play();
 		cubeClone2 = Instantiate(cube2, hand.position, transform.rotation).rigidbody;
 		//cubeClone.position = Vector3(0,4,0);
 		
 		cubeClone2.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
+		//audio.Stop();
 		attack1buf = true;
 		WaitAndDestroy(0.2f, .5f, cubeClone2);
+
+		
+		
 		
 	}
 	
@@ -83,13 +99,22 @@ function Update () {
 
 		//transform.Translate(0, 0, 0);
 		animation.CrossFade("punchstring3");
+		audio.clip = lefthook;
+		audio.loop = false;
+		audio.Play();
 		cubeClone3 = Instantiate(cube3, hand.position, transform.rotation).rigidbody;
 		//cubeClone.position = Vector3(0,4,0);
 
 		cubeClone3.velocity = transform.forward * 20;
 		//yield WaitForSeconds(3);
+		//audio.Stop();
 		attack1buf = true;
 		WaitAndDestroy(0.1f, .5f, cubeClone3);
+		//audio.clip = footsteps;
+		
+		
+		
+		
 		
 
 	}
@@ -126,7 +151,7 @@ else if(player.transform.rotation.y > 0 && transform.parent.rotation.y > 0)
 {
 //			Debug.Log("first two");
 
-		transform.parent.transform.Translate(Vector3(0, 0, -knockback) * Time.deltaTime);
+		transform.parent.transform.Translate(Vector3(0, 0, knockback) * Time.deltaTime);
 
 }
 
@@ -138,10 +163,12 @@ else if(player.transform.rotation.y > 0 && transform.parent.rotation.y > 0)
 }
 
 function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
-
+		
 		yield WaitForSeconds(delayd);
 		Destroy (obj.gameObject);
 		yield(WaitForSeconds(delay2));
+		audio.Stop();
+		audio.clip = footsteps;
 		attack1buf = false;
 		//attack2buf = false;
 		//attack3buf = false;
