@@ -10,7 +10,8 @@ public static var hit : float;
 public static var hit2 : float;
 var wincond : GUIText;
 var style : GUIStyle;
-
+var end : boolean = false;
+var style2 : GUIStyle;
 
 function OnGUI()
 {
@@ -32,6 +33,17 @@ function OnGUI()
  
     GUI.EndGroup ();
  
+ 	if(end)
+ 	{
+	 	if (GUI.Button(Rect(0,100,Screen.width,80),"PLAY AGAIN?", style2))
+	 	{
+	 		Application.LoadLevel(0);
+	 		Time.timeScale = 1;
+	 		hit = 0;
+	 		hit2 = 0;
+	 	}
+				//Debug.Log("Clicked the button with text");
+	}
 } 
  
 function Update()
@@ -44,10 +56,12 @@ function Update()
 
 	if(hit2 >= 1)
 	{
-		Debug.Log("Taft WINS!");
+		//Debug.Log("Taft WINS!");
 		wincond.enabled = true;
 		wincond.alignment = TextAlignment.Center;
 		wincond.text = "Taft WINS!";
+
+		end = true;
 		Time.timeScale = 0;
 		//yield WaitForSeconds(4);
 		//hit2 = 0;
@@ -55,11 +69,13 @@ function Update()
 	}	
 	if(hit >= 1)
 	{
-		Debug.Log("Lincoln WINS!");
+		//Debug.Log("Lincoln WINS!");
 		wincond.enabled = true;
 		wincond.alignment = TextAlignment.Center;
 
 		wincond.text = "Lincoln WINS!";	
+
+		end = true;
 		Time.timeScale = 0;
 		//yield WaitForSeconds(4);
 		//hit2 = 0;
