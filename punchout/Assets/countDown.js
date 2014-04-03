@@ -5,6 +5,7 @@ var show1 = false;
 var text : GUI;
 var t = 0;
 var st : GUIStyle;
+var dontcheck = false;
  
 function Start () {
 	//StopWatch(1);
@@ -30,7 +31,7 @@ function Update () {
 		//StopWatch(1);
 		//t+=1;
 	}
-	if(Time.realtimeSinceStartup >= 6)
+	if(Time.realtimeSinceStartup >= 6 && dontcheck == false)
 	{
 		show1 = true;
 		show2 = false;
@@ -39,6 +40,7 @@ function Update () {
 	if(Time.realtimeSinceStartup >= 7)
 	{
 		show1 = false;
+		dontcheck = true;
 	}
 }
 
