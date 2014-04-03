@@ -12,14 +12,16 @@ var wincond : GUIText;
 var style : GUIStyle;
 var end : boolean = false;
 var style2 : GUIStyle;
+var popVoteStyle : GUIStyle;
+var popVoteStyleBot : GUIStyle;
 
 function OnGUI()
 {
 
     // draw the background:
     GUI.BeginGroup (new Rect (pos.x, pos.y, Screen.width, 60));
-        GUI.Box (Rect (0,0, Screen.width, 30),progressBarEmpty);
- 		GUI.Box (Rect (0,30, Screen.width, 30),progressBarEmpty);
+        GUI.Box (Rect (0,0, Screen.width, 30),progressBarEmpty, popVoteStyle);
+ 		GUI.Box (Rect (0,30, Screen.width, 30),progressBarEmpty, popVoteStyleBot);
  		GUI.Label(Rect(0, 0, Screen.width, 30), "Lincoln", style);
  		GUI.Label(Rect(0, 30, Screen.width, 30), "Taft", style);
         // draw the filled-in part:

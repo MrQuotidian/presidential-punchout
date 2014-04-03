@@ -19,9 +19,9 @@ function OnCollisionEnter(player : Collision)
 	{
 		Debug.Log("hit p1");
 		Destroy(this);
-    	popVoteMeter.hit2 += .01f;
+    	popVoteMeter.hit2 += .03f;
     	if(popVoteMeter.hit > 0)
-    		popVoteMeter.hit -= .01f;
+    		popVoteMeter.hit -= .03f;
     	else
     	{
     		popVoteMeter.hit = 0;
@@ -31,9 +31,9 @@ function OnCollisionEnter(player : Collision)
 	{
 		Debug.Log("hit p2");
 		Destroy(this);
-		popVoteMeter.hit += .01f;
+		popVoteMeter.hit += .03f;
 		if(popVoteMeter.hit2 > 0)
-    		popVoteMeter.hit2 -= .01f;
+    		popVoteMeter.hit2 -= .03f;
     	else
     	{
     		popVoteMeter.hit2 = 0;

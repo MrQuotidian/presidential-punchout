@@ -27,6 +27,8 @@ var reach : AudioClip;
 var footsteps : AudioClip;
 
 
+var sound = new AudioClip[7];
+
 function Start () {
 
 	//cubeClone = 
@@ -34,7 +36,10 @@ function Start () {
 }
 
 function Update () {
-
+	if(!audio.isPlaying)
+	{
+		audio.clip = footsteps;
+	}
 	//otherScript = GetComponent("popVoteMeter"); 
     //Debug(otherScript.hit);
 	
@@ -122,6 +127,17 @@ function Update () {
 
 function OnCollisionEnter(player : Collision)
 {
+		var soundNum = Random.Range(0, 6);
+		audio.clip = sound[soundNum];
+		audio.loop = false;
+		audio.Play();
+		
+		//audio.Stop();
+		//audio.clip = footsteps;
+		//audio.Play();
+
+
+		//Debug.Log(soundNum);
 //Debug.Log("boom y " + player.transform.rotation.y);
 //Debug.Log("parent y" + transform.parent.rotation.y);
 //Destroy(player.gameObject);
@@ -159,7 +175,7 @@ else if(player.transform.rotation.y > 0 && transform.parent.rotation.y > 0)
 
     //Debug.Log("Collision Detected");
  
-    
+    	
 }
 
 function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
