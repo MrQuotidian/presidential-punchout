@@ -40,6 +40,7 @@ function Update () {
 	if(Time.realtimeSinceStartup >= 7)
 	{
 		show1 = false;
+		show2 = false;
 		dontcheck = true;
 	}
 }

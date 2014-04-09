@@ -21,7 +21,7 @@ function calcScreen(p1:Transform, p2:Transform){
  
 function Start(){
     // find references to the fighters
-    f1 = GameObject.Find("LincolnFBX2").transform;   
+    f1 = GameObject.Find("LincolnFBX5").transform;   
     f2 = GameObject.Find("TaftFBX1").transform;
     // initializes scene size and camera distance
     calcScreen(f1,f2);

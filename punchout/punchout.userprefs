@@ -1,14 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\countDown.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\taftPunch.js">
     <Files>
+      <File FileName="Assets\taftPunch.js" Line="228" Column="1" />
+      <File FileName="Assets\Scripts\dynamic_camera.js" Line="1" Column="1" />
       <File FileName="Assets\popVoteMeter.js" Line="1" Column="1" />
       <File FileName="Assets\taftPunch.js" Line="1" Column="1" />
       <File FileName="Assets\hitBoxHeavy.js" Line="1" Column="1" />
       <File FileName="Assets\hitBoxMed.js" Line="1" Column="1" />
-      <File FileName="Assets\hitBoxLight.js" Line="19" Column="3" />
+      <File FileName="Assets\hitBoxLight.js" Line="1" Column="1" />
       <File FileName="Assets\AnimationScript.js" Line="1" Column="1" />
-      <File FileName="Assets\countDown.js" Line="43" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

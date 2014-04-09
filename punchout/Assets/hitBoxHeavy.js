@@ -15,11 +15,8 @@ function OnCollisionEnter(player : Collision)
 
 Debug.Log("The object hit was: " + player.gameObject.name);
 	
-	if(player.gameObject.name == "LincolnFBX2")
+	if((player.gameObject.name == "LincolnFBX5" || player.gameObject.name== "lincoln") && taftPunch.blocking == false)
 	{
-
-		
-		
 		Debug.Log("hit p1");
 		Destroy(this);
     	popVoteMeter.hit2 += .15f;
