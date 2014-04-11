@@ -20,6 +20,8 @@ var onFloor = false;
 
 var floor : GameObject;
 
+public var frozen = false;
+
 //animation.wrapMode = WrapMode.Loop;
 
 function Start ()
@@ -35,78 +37,80 @@ function Update () {
 		
 	//if(Input.GetKey("mouse 0"))
 		//animation.Play("chop");
-
-		
 	
-	if (Input.GetKey(left))
+	if(!frozen) //&& taftPunch.playername == "lincoln")
 	{
-		transform.eulerAngles.y = -90;
-		                               
-		                               
-		animation.Play(leftright);
-		//animation.wrapMode = WrapMode.Loop;
-		//isMoving = true;
-		transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
 		
-			
-		if(Input.GetKey(jump))
+		if (Input.GetKey(left))
 		{
-			audio.Stop();
+			transform.eulerAngles.y = -90;
+			                               
+			                               
+			animation.Play(leftright);
+			//animation.wrapMode = WrapMode.Loop;
+			//isMoving = true;
+			transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
+			
+				
+			if(Input.GetKey(jump))
+			{
+				audio.Stop();
+				
+			}
+				
+			else if(!audio.isPlaying)
+				audio.Play();
+			///if(lincoln.position.y != 11.50729)
+			//	audio.Stop();
+			//isMoving = true;
+			//runSound();
 			
 		}
-			
-		else if(!audio.isPlaying)
-			audio.Play();
-		///if(lincoln.position.y != 11.50729)
-		//	audio.Stop();
-		//isMoving = true;
-		//runSound();
-		
-	}
-	else if (Input.GetKey(right))
-	{
-		transform.eulerAngles.y = 90;
-		animation.Play(leftright);
-		transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
-		
-		if(Input.GetKey(jump))
+		else if (Input.GetKey(right))
 		{
-			audio.Stop();
-
-		}
+			//Debug.Log("going right");
+			transform.eulerAngles.y = 90;
+			animation.Play(leftright);
+			transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
 			
-		else if(!audio.isPlaying)
-			audio.Play();
-	}
-	else if(Input.GetKey(fallPlay))
-	{
-		Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
-		Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider));
-		Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
-	}
-	
-	if(Input.GetKeyUp(fallPlay) && !onFloor)
-	{
-		
-		Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider), false);
-		Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider), false);
-		Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider), false);
-	
-	}
+			if(Input.GetKey(jump))
+			{
+				audio.Stop();
 
-	if(Input.GetKeyUp(left) || Input.GetKeyUp(right))
-	{
-		animation.Stop(leftright);
-		//animation.CrossFade("standing");
-		//animation.wrapMode = WrapMode.Once;
-		animation.Play(stand);
-		//audio.Stop();
-		//isMoving = false;
-		//runSound();
-		audio.Stop();
+			}
+				
+			else if(!audio.isPlaying)
+				audio.Play();
+		}
+		else if(Input.GetKey(fallPlay))
+		{
+			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
+			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider));
+			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
+		}
+		
+		if(Input.GetKeyUp(fallPlay) && !onFloor)
+		{
+			
+			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider), false);
+			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider), false);
+			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider), false);
+		
+		}
+
+		if(Input.GetKeyUp(left) || Input.GetKeyUp(right))
+		{
+			animation.Stop(leftright);
+			//animation.CrossFade("standing");
+			//animation.wrapMode = WrapMode.Once;
+			animation.Play(stand);
+			//audio.Stop();
+			//isMoving = false;
+			//runSound();
+			audio.Stop();
+		}
+	
 	}
-	
-	
 }
 
 function OnTriggerEnter (other : Collider) {

@@ -212,7 +212,7 @@ ModelImporter:
     - serializedVersion: 16
       name: punchstring1
       takeName: Take 001
-      firstFrame: 40
+      firstFrame: 39
       lastFrame: 47
       wrapMode: 0
       orientationOffsetY: 0

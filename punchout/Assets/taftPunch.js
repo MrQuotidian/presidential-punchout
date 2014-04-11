@@ -6,7 +6,7 @@ var attack3 : KeyCode;
 var attack4 : KeyCode;
 var block : KeyCode;
 var t : int;
-public static var blocking = false;
+public var blocking = false;
 var stunned = false;
 var left : KeyCode;
 var right : KeyCode;
@@ -30,8 +30,8 @@ var lefthook : AudioClip;
 var righthook : AudioClip;
 var reach : AudioClip;
 var footsteps : AudioClip;
-
-
+//public var playername;
+//var script : AccessScript;
 var sound = new AudioClip[7];
 
 function Start () {
@@ -41,19 +41,40 @@ function Start () {
 }
 
 function Update () {
+
+
 	if(!audio.isPlaying)
 	{
 		audio.clip = footsteps;
 	}
 	//otherScript = GetComponent("popVoteMeter"); 
     //Debug(otherScript.hit);
+    if(stunned)
+    {
+  		var script = transform.parent.gameObject.GetComponent(AnimationScript);
+    	script.frozen = true;
+    	var scriptch = transform.gameObject.GetComponent(AnimationScript);
+    	scriptch.frozen = true;
+    	//playername = "lincoln";
+    	//DisableKey(left);
+    	//DisableKey(right);
+    	//Debug.Log(transform.parent.name);
+		//AnimationScript.frozen = true;
+    }
+    
 	if(stunned == false)
 	{
+	
+		var scriptch2 = transform.gameObject.GetComponent(AnimationScript);
+    	scriptch2.frozen = false;
+		var script2 = transform.parent.gameObject.GetComponent(AnimationScript);
+		script2.frozen = false;
+		
 		if(Input.GetKeyDown(attack1) && attack1buf == false  && !Input.GetKey(left) && !Input.GetKey(right))
 		{
 
 			//attacking = true;
-			
+			Debug.Log("punching");
 			animation.Stop("idleL");
 			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring1");
@@ -153,7 +174,7 @@ function Update () {
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			attack1buf = true;
-			WaitAndDestroy(0.15f, 2f, cubeClone3);
+			WaitAndDestroy(0.15f, 1.5f, cubeClone3);
 			//audio.clip = footsteps;
 		}
 		
@@ -225,7 +246,7 @@ function OnCollisionEnter(player : Collision)
 		{
 				transform.parent.transform.Translate(Vector3(0, 0, knockback) * Time.deltaTime);
 		}	 
-		yield WaitForSeconds(1.5f);
+		yield WaitForSeconds(.8f);
 			stunned = false;
     }
 }
@@ -242,3 +263,4 @@ function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
 		//attack3buf = false;
 	
 }
+

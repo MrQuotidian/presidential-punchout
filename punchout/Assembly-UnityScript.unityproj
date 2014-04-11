@@ -58,6 +58,7 @@
      <Compile Include="Assets\popVoteMeter.js" />
      <Compile Include="Assets\soundTrig.js" />
      <Compile Include="Assets\taftPunch.js" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

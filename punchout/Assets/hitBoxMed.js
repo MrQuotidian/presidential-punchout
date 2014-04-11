@@ -12,8 +12,9 @@ function OnCollisionEnter(player : Collision)
 {
 
 Debug.Log("The object hit was: " + player.gameObject.name);
+	var scriptlinc = player.gameObject.transform.GetComponent(taftPunch);
 	
-	if((player.gameObject.name == "LincolnFBX5" || player.gameObject.name== "lincoln") && taftPunch.blocking == false)
+	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false && scriptlinc.stunned == false)
 	{
 		Debug.Log("hit p1");
 		Destroy(this);
@@ -26,7 +27,7 @@ Debug.Log("The object hit was: " + player.gameObject.name);
     	}
 		
 	}
-	else if(player.gameObject.name == "TaftFBX1")
+	else if(player.gameObject.name == "TaftFBX1" && scriptlinc.blocking == false && scriptlinc.stunned == false)
 	{
 		Debug.Log("hit p2");
 		Destroy(this);

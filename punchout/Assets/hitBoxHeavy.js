@@ -15,7 +15,11 @@ function OnCollisionEnter(player : Collision)
 
 Debug.Log("The object hit was: " + player.gameObject.name);
 	
-	if((player.gameObject.name == "LincolnFBX5" || player.gameObject.name== "lincoln") && taftPunch.blocking == false)
+	var scriptlinc = player.gameObject.transform.GetComponent(taftPunch);
+
+    //scriptlinc.blocking;
+    
+	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false && scriptlinc.stunned == false)
 	{
 		Debug.Log("hit p1");
 		Destroy(this);
@@ -27,7 +31,7 @@ Debug.Log("The object hit was: " + player.gameObject.name);
     		popVoteMeter.hit = 0;
     	}
 	}
-	else if(player.gameObject.name == "TaftFBX1")
+	else if(player.gameObject.name == "TaftFBX1" && scriptlinc.blocking == false && scriptlinc.stunned == false)
 	{
 		Debug.Log("hit p2");
 		Destroy(this);

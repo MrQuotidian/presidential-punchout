@@ -1,6 +1,8 @@
 ﻿#pragma strict
 
 //var wins : GUIText;
+var lincoln : Transform;
+var taft : Transform;
 
 function Start () {
 
@@ -14,8 +16,11 @@ function OnCollisionEnter(player : Collision)
 {
 
 //Debug.Log("The object hit was: " + player.gameObject.name);
+	var scriptlinc = player.gameObject.transform.GetComponent(taftPunch);
+	//var scripttaft = taft.GetComponent(taftPunch);
 	
-	if((player.gameObject.name == "LincolnFBX5" || player.gameObject.name== "lincoln") && taftPunch.blocking == false)
+	//Debug.Log(scriptlinc.blocking);
+	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false && scriptlinc.stunned == false)
 	{
 		Debug.Log("hit p1");
 		Destroy(this);
@@ -27,7 +32,7 @@ function OnCollisionEnter(player : Collision)
     		popVoteMeter.hit = 0;
     	}
 	}
-	else if(player.gameObject.name == "TaftFBX1")
+	else if(player.gameObject.name == "TaftFBX1" && scriptlinc.blocking == false && scriptlinc.stunned == false)
 	{
 		Debug.Log("hit p2");
 		Destroy(this);
