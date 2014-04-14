@@ -1,0 +1,961 @@
+fileFormatVersion: 2
+guid: 32164a11a67ca114ea127d681cbbe93b
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: base_chest1
+    100002: head_crown
+    100004: left_elbow
+    100006: left_fingers
+    100008: left_fingers_tip
+    100010: left_knuckle
+    100012: left_leg_ankle
+    100014: left_leg_foot_back
+    100016: left_leg_knee
+    100018: left_leg_pelvis
+    100020: left_leg_toes
+    100022: left_leg_toes_tip
+    100024: left_shoulder
+    100026: left_thumb_base
+    100028: left_thumb_middle
+    100030: left_thumb_tip
+    100032: left_wrist
+    100034: neck
+    100036: right_elbow
+    100038: right_fingers
+    100040: right_fingers_tip
+    100042: right_knuckle
+    100044: right_leg_ankle
+    100046: right_leg_foot_back
+    100048: right_leg_knee
+    100050: right_leg_pelvis
+    100052: right_leg_toes
+    100054: right_leg_toes_tip
+    100056: right_shoulder
+    100058: right_thumb_base
+    100060: right_thumb_middle
+    100062: right_thumb_tip
+    100064: right_wrist
+    100066: Spine
+    100068: Taft_Rig
+    100070: //RootNode
+    100072: TaftModel
+    100074: TaftSkeleton
+    400000: base_chest1
+    400002: head_crown
+    400004: left_elbow
+    400006: left_fingers
+    400008: left_fingers_tip
+    400010: left_knuckle
+    400012: left_leg_ankle
+    400014: left_leg_foot_back
+    400016: left_leg_knee
+    400018: left_leg_pelvis
+    400020: left_leg_toes
+    400022: left_leg_toes_tip
+    400024: left_shoulder
+    400026: left_thumb_base
+    400028: left_thumb_middle
+    400030: left_thumb_tip
+    400032: left_wrist
+    400034: neck
+    400036: right_elbow
+    400038: right_fingers
+    400040: right_fingers_tip
+    400042: right_knuckle
+    400044: right_leg_ankle
+    400046: right_leg_foot_back
+    400048: right_leg_knee
+    400050: right_leg_pelvis
+    400052: right_leg_toes
+    400054: right_leg_toes_tip
+    400056: right_shoulder
+    400058: right_thumb_base
+    400060: right_thumb_middle
+    400062: right_thumb_tip
+    400064: right_wrist
+    400066: Spine
+    400068: Taft_Rig
+    400070: //RootNode
+    400072: TaftModel
+    400074: TaftSkeleton
+    4300000: TaftModel
+    7400000: stun
+    7400002: punchstring1
+    7400004: punchstring2
+    7400006: punchstring3
+    7400008: block
+    7400010: punchstring4
+    7400012: walking
+    7400014: idleT
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: TaftModel
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: stun
+      takeName: Take 001
+      firstFrame: 83
+      lastFrame: 91
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: punchstring1
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: punchstring2
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: punchstring3
+      takeName: Take 001
+      firstFrame: 21
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: block
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 50.0999985
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: punchstring4
+      takeName: Take 001
+      firstFrame: 65
+      lastFrame: 83
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walking
+      takeName: Take 001
+      firstFrame: 272
+      lastFrame: 299
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idleT
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Taft_Rig
+        weight: 1
+      - path: Taft_Rig/TaftModel
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/left_shoulder/left_elbow/left_wrist/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/neck/head_crown
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle
+        weight: 1
+      - path: Taft_Rig/TaftSkeleton/Spine/base_chest1/right_shoulder/right_elbow/right_wrist/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 

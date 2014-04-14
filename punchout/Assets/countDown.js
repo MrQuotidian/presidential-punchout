@@ -6,9 +6,12 @@ var text : GUI;
 var t = 0;
 var st : GUIStyle;
 var dontcheck = false;
+var done = false;
+var timeKeeper;
  
 function Start () {
 	//StopWatch(1);
+	//timeKeeper = 0;
 	Time.timeScale = 0;
 	//t = 1;
 }
@@ -16,33 +19,38 @@ function Start () {
 function Update () {
 
 	//Debug.Log(Time.realtimeSinceStartup);
-	
-	if(Time.realtimeSinceStartup >= 4)
+	//timeKeeper = Time.realtimeSinceStartup;
+	//if(Time.realtimeSinceStartup 
+if(!done)
+{
+	if(Time.realtimeSinceStartup % 10 >= 4)
 	{	show3 = true;
 		
 		//Time.timeScale = 0;
 		
 		//t+=1;
 	}
-	if(Time.realtimeSinceStartup >= 5)
+	if(Time.realtimeSinceStartup % 10 >= 5)
 	{
 		show2 = true;
 		show3 = false;
 		//StopWatch(1);
 		//t+=1;
 	}
-	if(Time.realtimeSinceStartup >= 6 && dontcheck == false)
+	if(Time.realtimeSinceStartup % 10 >= 6 && dontcheck == false)
 	{
 		show1 = true;
 		show2 = false;
 		Time.timeScale = 1;
 	}
-	if(Time.realtimeSinceStartup >= 7)
+	if(Time.realtimeSinceStartup % 10 >= 7)
 	{
 		show1 = false;
 		show2 = false;
 		dontcheck = true;
+		done = true;
 	}
+}
 }
 
 function StopWatch (time:int)

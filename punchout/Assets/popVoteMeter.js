@@ -40,7 +40,7 @@ function OnGUI()
  
  	if(end)
  	{
-	 	if (GUI.Button(Rect(0,100,Screen.width,80),"PLAY AGAIN?", style2))
+	 	if (GUI.Button(Rect(0,0,Screen.width,Screen.height),"PLAY AGAIN?", style2))
 	 	{
 	 		Application.LoadLevel(0);
 	 		Time.timeScale = 1;

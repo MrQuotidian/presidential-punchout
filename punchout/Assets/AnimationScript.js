@@ -7,14 +7,15 @@ var left : KeyCode;
 var right : KeyCode;
 var jump : KeyCode;
 var fallPlay : KeyCode;
-
+var moved = false;
 var leftright : String;
 var stand : String;
 //public var target : Transform;
 var platform : Transform;
 var platform2 : Transform;
 var platform3 : Transform;
-
+var LincolnControllerMove : String;
+var ControllerFall : String;
 var player : Collider;
 var onFloor = false;
 
@@ -26,6 +27,7 @@ public var frozen = false;
 
 function Start ()
 {
+	animation.Play(stand);
 	//audio.clip = footsteps;
 	//audio.loop = true;
 	//animation("running").wrapMode = WrapMode.Loop;
@@ -41,8 +43,9 @@ function Update () {
 	if(!frozen) //&& taftPunch.playername == "lincoln")
 	{
 		
-		if (Input.GetKey(left))
+		if (Input.GetAxis(LincolnControllerMove) < 0)
 		{
+			moved = true;
 			transform.eulerAngles.y = -90;
 			                               
 			                               
@@ -60,14 +63,17 @@ function Update () {
 				
 			else if(!audio.isPlaying)
 				audio.Play();
+				
+			//animation.Play(stand);
 			///if(lincoln.position.y != 11.50729)
 			//	audio.Stop();
 			//isMoving = true;
 			//runSound();
 			
 		}
-		else if (Input.GetKey(right))
+		else if (Input.GetAxis(LincolnControllerMove) > 0)
 		{
+			moved = true;
 			//Debug.Log("going right");
 			transform.eulerAngles.y = 90;
 			animation.Play(leftright);
@@ -82,23 +88,24 @@ function Update () {
 			else if(!audio.isPlaying)
 				audio.Play();
 		}
-		else if(Input.GetKey(fallPlay))
+		else if(Input.GetAxis(ControllerFall) < -0.8f)
 		{
 			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
 			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider));
 			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
 		}
 		
-		if(Input.GetKeyUp(fallPlay) && !onFloor)
-		{
+		//if(Input.GetKeyUp(fallPlay) && !onFloor)
+		//{
 			
-			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider), false);
-			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider), false);
-			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider), false);
+		//	Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider), false);
+		//	Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider), false);
+		//	Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider), false);
 		
-		}
+		//}
 
-		if(Input.GetKeyUp(left) || Input.GetKeyUp(right))
+		if(moved == true)
+		if(Input.GetAxis(LincolnControllerMove) == 0 || Input.GetAxis(LincolnControllerMove) == 0)
 		{
 			animation.Stop(leftright);
 			//animation.CrossFade("standing");
@@ -108,6 +115,7 @@ function Update () {
 			//isMoving = false;
 			//runSound();
 			audio.Stop();
+			moved = false;
 		}
 	
 	}

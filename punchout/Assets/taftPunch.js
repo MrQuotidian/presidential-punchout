@@ -22,9 +22,9 @@ var cubeClone2 : Rigidbody;
 var cubeClone3 : Rigidbody;
 var cubeClone4 : Rigidbody;
 var attack1buf = false;
-
+var ControllerMove : String;
+var stand : String;
 var knockback = 1000;
-
 var jab : AudioClip;
 var upper : AudioClip;
 var lefthook : AudioClip;
@@ -75,7 +75,7 @@ function Update () {
 		var script2 = transform.parent.gameObject.GetComponent(AnimationScript);
 		script2.frozen = false;
 		
-		if(Input.GetKeyDown(attack1) && attack1buf == false  && !Input.GetKey(left) && !Input.GetKey(right))
+		if(Input.GetKeyDown(attack1) && attack1buf == false  && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 			particle.Emit(100);
 
@@ -84,6 +84,8 @@ function Update () {
 			animation.Stop("idleL");
 			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring1");
+						stunned = true;
+
 			audio.clip = jab;
 			audio.Play();
 			cubeClone = Instantiate(cube, hand.position, transform.rotation).rigidbody;
@@ -94,6 +96,8 @@ function Update () {
 			//audio.Stop();
 			attack1buf = true;
 			WaitAndDestroy(0.3f, .05f, cubeClone);//You can use this move many times a second.
+			//animation.Play(stand);
+
 
 	    	//Destroy(cubeClone.gameObject);
 			
@@ -106,7 +110,7 @@ function Update () {
 			
 
 		}
-		if(Input.GetKeyDown(attack2) && attack1buf == false && !Input.GetKey(left) && !Input.GetKey(right))
+		if(Input.GetKeyDown(attack2) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 		
 			particle.Emit(500);
@@ -115,6 +119,8 @@ function Update () {
 			animation.Stop("idleL");
 			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring2");
+			stunned = true;
+
 			audio.clip = reach;
 			audio.Play();
 			cubeClone2 = Instantiate(cube2, hand.position, transform.rotation).rigidbody;
@@ -131,7 +137,7 @@ function Update () {
 			
 		}
 		
-		if(Input.GetKeyDown(attack3) && attack1buf == false && !Input.GetKey(left) && !Input.GetKey(right))
+		if(Input.GetKeyDown(attack3) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 			
 			particle.Emit(500);
@@ -139,7 +145,7 @@ function Update () {
 			//attacking = true;
 			animation.Stop("idleL");
 			//particle.Emit(2);
-
+			stunned = true;
 			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring3");
 			audio.clip = lefthook;
@@ -162,7 +168,7 @@ function Update () {
 
 		}
 		
-		if(Input.GetKeyDown(attack4) && attack1buf == false && !Input.GetKey(left) && !Input.GetKey(right))
+		if(Input.GetKeyDown(attack4) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 			particle.Emit(500);
 			//attacking = true;
@@ -171,6 +177,7 @@ function Update () {
 
 			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring4");
+			stunned = true;
 			audio.clip = righthook;
 			audio.loop = false;
 			audio.Play();
@@ -190,11 +197,11 @@ function Update () {
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			attack1buf = true;
-			WaitAndDestroy(0.15f, 1.3f, cubeClone4);
+			WaitAndDestroy(0.4f, .8f, cubeClone4);
 			//audio.clip = footsteps;
 		}
 		
-		if(Input.GetKey(block) && attack1buf == false && !Input.GetKey(left) && !Input.GetKey(right))
+		if(Input.GetKey(block) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 			//attacking = true;
 			animation.Stop("idleL");
@@ -227,7 +234,7 @@ function Update () {
 function OnCollisionEnter(player : Collision)
 {
 	//Debug.Log(blocking);
-	if(blocking == false)
+	if(blocking == false && player.gameObject.name != this)
 	{
 		//particle.Clear();
 		stunned = true;
@@ -274,6 +281,8 @@ function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
 		Destroy (obj.gameObject);
 		yield(WaitForSeconds(delay2));
 		particle.Clear();
+		stunned = false;
+								animation.Play(stand);
 
 		audio.Stop();
 		audio.clip = footsteps;
