@@ -13,6 +13,7 @@ var style : GUIStyle;
 var end : boolean = false;
 var style2 : GUIStyle;
 var popVoteStyle : GUIStyle;
+var popVoteTitle : GUIStyle;
 var popVoteStyleBot : GUIStyle;
 
 function OnGUI()
@@ -24,6 +25,7 @@ function OnGUI()
  		GUI.Box (Rect (0,30, Screen.width, 30),progressBarEmpty, popVoteStyleBot);
  		GUI.Label(Rect(0, 0, Screen.width, 30), "Lincoln", style);
  		GUI.Label(Rect(0, 30, Screen.width, 30), "Taft", style);
+ 		
         // draw the filled-in part:
         GUI.BeginGroup (new Rect (0, 0, Screen.width * barDisplay, 30));
             GUI.Box (Rect (0,0, Screen.width, 30),progressBarFull);
@@ -34,6 +36,7 @@ function OnGUI()
         GUI.EndGroup ();
  
     GUI.EndGroup ();
+    GUI.Label(Rect(0, 60, Screen.width, 30), "Popular Vote Meter", popVoteTitle);
  
  	if(end)
  	{

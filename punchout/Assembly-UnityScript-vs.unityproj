@@ -49,6 +49,7 @@
      <Compile Include="Assets\AnimationScript.js" />
      <Compile Include="Assets\Scripts\dynamic_camera.js" />
      <Compile Include="Assets\Scripts\movement.js" />
+     <Compile Include="Assets\bigAttack.js" />
      <Compile Include="Assets\countDown.js" />
      <Compile Include="Assets\hitBox.js" />
      <Compile Include="Assets\hitBoxHeavy.js" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\platformCollision.js" />
      <Compile Include="Assets\popVoteMeter.js" />
      <Compile Include="Assets\soundTrig.js" />
+     <Compile Include="Assets\stageFall.js" />
      <Compile Include="Assets\taftPunch.js" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">

@@ -9,7 +9,8 @@ function Update () {
 function OnTriggerEnter (jumper: Collider) {
 //make the parent platform ignore the jumper
 	var platform = transform.parent;
-
+	
+	if(jumper.GetComponent(CharacterController))
     Physics.IgnoreCollision(jumper.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
 
 }
