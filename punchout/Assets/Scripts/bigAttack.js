@@ -19,7 +19,7 @@ function OnCollisionEnter(player : Collision)
 
     //scriptlinc.blocking;
     
-	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false && scriptlinc.stunned == false)
+	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false)
 	{
 			scriptlinc.knockback = knock;
 
@@ -33,7 +33,7 @@ function OnCollisionEnter(player : Collision)
     		popVoteMeter.hit = 0;
     	}
 	}
-	else if(player.gameObject.name == "TaftDone2" && scriptlinc.blocking == false && scriptlinc.stunned == false)
+	else if(player.gameObject.name == "TaftDone2" && scriptlinc.blocking == false)
 	{
 			scriptlinc.knockback = knock;
 

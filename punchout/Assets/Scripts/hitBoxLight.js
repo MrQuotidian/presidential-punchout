@@ -18,7 +18,7 @@ function OnCollisionEnter(player : Collision)
 	//var scripttaft = taft.GetComponent(taftPunch);
 	
 	//Debug.Log(scriptlinc.blocking);
-	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false && scriptlinc.stunned == false)
+	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false)
 	{
 		scriptlinc.knockback = knock;
 		Debug.Log("hit p1");
@@ -31,7 +31,7 @@ function OnCollisionEnter(player : Collision)
     		popVoteMeter.hit = 0;
     	}
 	}
-	else if(player.gameObject.name == "TaftDone2" && scriptlinc.blocking == false && scriptlinc.stunned == false)
+	else if(player.gameObject.name == "TaftDone2" && scriptlinc.blocking == false)
 	{
 		scriptlinc.knockback = knock;
 		Debug.Log("hit p2");

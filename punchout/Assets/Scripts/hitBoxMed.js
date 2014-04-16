@@ -14,7 +14,7 @@ function OnCollisionEnter(player : Collision)
 //Debug.Log("The object hit was: " + player.gameObject.name);
 	var scriptlinc = player.gameObject.transform.GetComponent(taftPunch);
 	
-	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false && scriptlinc.stunned == false)
+	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false)
 	{
 			scriptlinc.knockback = knock;
 
@@ -29,7 +29,7 @@ function OnCollisionEnter(player : Collision)
     	}
 		
 	}
-	else if(player.gameObject.name == "TaftDone2" && scriptlinc.blocking == false && scriptlinc.stunned == false)
+	else if(player.gameObject.name == "TaftDone2" && scriptlinc.blocking == false)
 	{
 			scriptlinc.knockback = knock;
 

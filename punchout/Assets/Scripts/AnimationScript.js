@@ -18,7 +18,8 @@ var LincolnControllerMove : String;
 var ControllerFall : String;
 var player : Collider;
 var onFloor = false;
-
+var ifp2exists = true;
+var ifp3exists = true;
 var floor : GameObject;
 
 public var frozen = false;
@@ -39,6 +40,15 @@ function Update () {
 		
 	//if(Input.GetKey("mouse 0"))
 		//animation.Play("chop");
+	var script = this.gameObject.GetComponent(taftPunch);
+	if(this.gameObject.name == "TaftDone2")
+	{
+		//Debug.Log(script.plsStopTaft);
+		if(script.plsStopTaft == true) //&& this.gameObject.name == "taftp")
+		{
+			animation.Play("stun", PlayMode.StopAll);
+		}
+	}
 	
 	if(!frozen) //&& taftPunch.playername == "lincoln")
 	{
@@ -91,8 +101,10 @@ function Update () {
 		else if(Input.GetAxis(ControllerFall) < -0.8f)
 		{
 			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
-			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider));
-			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
+			if(ifp2exists)
+				Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider));
+			if(ifp3exists)
+				Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
 		}
 		
 		//if(Input.GetAxis(LincolnControllerMove)==0 && !onFloor)
@@ -117,7 +129,6 @@ function Update () {
 			audio.Stop();
 			moved = false;
 		}
-	
 	}
 	else
 	{

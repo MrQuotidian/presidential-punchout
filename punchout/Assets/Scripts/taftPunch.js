@@ -35,6 +35,7 @@ var idle : String;
 //public var playername;
 //var script : AccessScript;
 var sound = new AudioClip[7];
+var plsStopTaft = false;
 
 function Start () {
 
@@ -85,7 +86,7 @@ function Update () {
 			animation.Stop(idle);
 			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring1");
-						stunned = true;
+			stunned = true;
 
 			audio.clip = jab;
 			audio.Play();
@@ -244,7 +245,7 @@ function OnCollisionEnter(player : Collision)
 		//animation.Stop(stand);
 		//Debug.Log(animation.IsPlaying();
 		animation.Play("stun", PlayMode.StopAll);
-
+		plsStopTaft = true;
 		stunned = true;
 		Debug.Log(this);
 		var soundNum = Random.Range(0, 6);
@@ -282,7 +283,10 @@ function OnCollisionEnter(player : Collision)
 		}	 
 
 		yield WaitForSeconds(.7f);
+		{
 			stunned = false;
+			plsStopTaft = false;
+		}
     }
 }
 
