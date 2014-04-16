@@ -98,7 +98,7 @@ function Update () {
 			//audio.Stop();
 			attack1buf = true;
 			//this.knockback = 10;
-			WaitAndDestroy(0.3f, .05f, cubeClone);//You can use this move many times a second.
+			WaitAndDestroy(0.4f, .02f, cubeClone);//You can use this move many times a second.
 			//animation.Play(stand);
 
 
@@ -133,7 +133,7 @@ function Update () {
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			attack1buf = true;
-			WaitAndDestroy(0.2f, .5f, cubeClone2);
+			WaitAndDestroy(0.3f, .4f, cubeClone2);
 
 			
 			
@@ -162,7 +162,7 @@ function Update () {
 			//audio.Stop();
 			//this.knockback = 20;
 			attack1buf = true;
-			WaitAndDestroy(0.15f, .5f, cubeClone3);
+			WaitAndDestroy(0.2f, .6f, cubeClone3);
 			//audio.clip = footsteps;
 			
 			
@@ -244,6 +244,7 @@ function OnCollisionEnter(player : Collision)
 		//animation.Stop("walking");
 		//animation.Stop(stand);
 		//Debug.Log(animation.IsPlaying();
+		//if(this.gameObject.name == "LincolnFBX5")
 		animation.Play("stun", PlayMode.StopAll);
 		plsStopTaft = true;
 		stunned = true;
@@ -284,6 +285,7 @@ function OnCollisionEnter(player : Collision)
 
 		yield WaitForSeconds(.7f);
 		{
+			audio.Stop();
 			stunned = false;
 			plsStopTaft = false;
 		}
@@ -306,4 +308,3 @@ function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
 		//attack3buf = false;
 	
 }
-

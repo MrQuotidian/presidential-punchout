@@ -1,14 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnimationScript.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\taftPunch.js">
     <Files>
-      <File FileName="Assets\Scripts\platform.js" Line="22" Column="1" />
-      <File FileName="Assets\Scripts\AnimationScript.js" Line="18" Column="29" />
-      <File FileName="Assets\Scripts\hitBoxLight.js" Line="54" Column="2" />
-      <File FileName="Assets\Scripts\taftPunch.js" Line="282" Column="57" />
-      <File FileName="Assets\Scripts\hitBoxHeavy.js" Line="18" Column="71" />
-      <File FileName="Assets\Scripts\hitBoxMed.js" Line="49" Column="2" />
-      <File FileName="Assets\Scripts\bigAttack.js" Line="53" Column="2" />
+      <File FileName="Assets\Scripts\taftPunch.js" Line="204" Column="22" />
+      <File FileName="Assets\Scripts\platform.js" Line="23" Column="6" />
+      <File FileName="Assets\Scripts\AnimationScript.js" Line="49" Column="4" />
+      <File FileName="Assets\Scripts\hitBoxLight.js" Line="25" Column="23" />
+      <File FileName="Assets\Scripts\taftPunch.js" Line="310" Column="2" />
+      <File FileName="Assets\Scripts\hitBoxHeavy.js" Line="4" Column="1" />
+      <File FileName="Assets\Scripts\hitBoxMed.js" Line="41" Column="31" />
+      <File FileName="Assets\Scripts\bigAttack.js" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

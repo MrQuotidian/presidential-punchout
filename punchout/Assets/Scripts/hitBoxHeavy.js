@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 var knock : int;
+var damage : float;
 function Start () {
 	
 
@@ -25,9 +26,9 @@ function OnCollisionEnter(player : Collision)
 
 		Debug.Log("hit p1");
 		Destroy(this);
-    	popVoteMeter.hit2 += .15f;
+    	popVoteMeter.hit2 += damage;
     	if(popVoteMeter.hit > 0)
-    		popVoteMeter.hit -= .15f;
+    		popVoteMeter.hit -= damage;
 		else
     	{
     		popVoteMeter.hit = 0;
@@ -39,9 +40,9 @@ function OnCollisionEnter(player : Collision)
 
 		Debug.Log("hit p2");
 		Destroy(this);
-		popVoteMeter.hit += .15f;
+		popVoteMeter.hit += damage;
 		if(popVoteMeter.hit2 > 0)
-    		popVoteMeter.hit2 -= .15f;
+    		popVoteMeter.hit2 -= damage;
     	else
     	{
     		popVoteMeter.hit2 = 0;

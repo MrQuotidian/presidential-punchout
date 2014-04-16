@@ -47,6 +47,7 @@ function Update () {
 		if(script.plsStopTaft == true) //&& this.gameObject.name == "taftp")
 		{
 			animation.Play("stun", PlayMode.StopAll);
+			//animation.Stop("walking");
 		}
 	}
 	

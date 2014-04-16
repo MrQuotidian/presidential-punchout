@@ -11,7 +11,7 @@ function OnTriggerEnter (jumper: Collider) {
 	var platform = transform.parent;
 	
 	if(jumper.GetComponent(CharacterController))
-    Physics.IgnoreCollision(jumper.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
+    	Physics.IgnoreCollision(jumper.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
 
 }
 
@@ -19,6 +19,7 @@ function OnTriggerExit (jumper: Collider) {
 //re-enable collision between jumper and parent platform
     var platform = transform.parent;
 
-    Physics.IgnoreCollision(jumper.GetComponent(CharacterController), platform.GetComponent(BoxCollider), false);
+	if(jumper.GetComponent(CharacterController))
+    	Physics.IgnoreCollision(jumper.GetComponent(CharacterController), platform.GetComponent(BoxCollider), false);
 
 }

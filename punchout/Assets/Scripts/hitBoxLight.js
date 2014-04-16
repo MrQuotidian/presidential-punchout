@@ -2,6 +2,7 @@
 
 //var wins : GUIText;
 var knock : int;
+var damage : float;
 function Start () {
 
 }
@@ -23,9 +24,9 @@ function OnCollisionEnter(player : Collision)
 		scriptlinc.knockback = knock;
 		Debug.Log("hit p1");
 		Destroy(this);
-    	popVoteMeter.hit2 += .03f;
+    	popVoteMeter.hit2 += damage;
     	if(popVoteMeter.hit > 0)
-    		popVoteMeter.hit -= .03f;
+    		popVoteMeter.hit -= damage;
     	else
     	{
     		popVoteMeter.hit = 0;
@@ -36,9 +37,9 @@ function OnCollisionEnter(player : Collision)
 		scriptlinc.knockback = knock;
 		Debug.Log("hit p2");
 		Destroy(this);
-		popVoteMeter.hit += .03f;
+		popVoteMeter.hit += damage;
 		if(popVoteMeter.hit2 > 0)
-    		popVoteMeter.hit2 -= .03f;
+    		popVoteMeter.hit2 -= damage;
     	else
     	{
     		popVoteMeter.hit2 = 0;
