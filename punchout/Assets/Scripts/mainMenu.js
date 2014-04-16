@@ -53,7 +53,7 @@ function Update(){
 	
 	if(this.name == "start" && this.renderer.material.color == Color.black && Input.GetKey(KeyCode.Joystick1Button0))
 	{
-		Debug.Log("here");
+		//Debug.Log("here");
 		Application.LoadLevel(1);
 	}
 	

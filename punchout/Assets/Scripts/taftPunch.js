@@ -248,7 +248,7 @@ function OnCollisionEnter(player : Collision)
 		animation.Play("stun", PlayMode.StopAll);
 		plsStopTaft = true;
 		stunned = true;
-		Debug.Log(this);
+		//Debug.Log(this);
 		var soundNum = Random.Range(0, 6);
 		audio.clip = sound[soundNum];
 		audio.loop = false;
