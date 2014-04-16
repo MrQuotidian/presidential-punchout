@@ -1,0 +1,649 @@
+fileFormatVersion: 2
+guid: 91877e6b669c3104889169a165ed7185
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: base_chest
+    100002: base_chest1
+    100004: big_headed_characters
+    100006: Bowtie
+    100008: clothingExport:polySurface1SmoothProxyGroup
+    100010: FK_Controls
+    100012: FK_left_elbow
+    100014: FK_left_fingers
+    100016: FK_left_knuckle
+    100018: FK_left_Shoulder
+    100020: FK_left_thumbbase
+    100022: FK_left_thumbmid
+    100024: FK_left_wrist
+    100026: FK_right_elbow
+    100028: FK_right_fingers
+    100030: FK_right_knuckle
+    100032: FK_right_Shoulder
+    100034: FK_right_thumbbase
+    100036: FK_right_thumbmid
+    100038: FK_right_wrist
+    100040: Gamecharacter
+    100042: Gamecharacter1
+    100044: hairCurve1
+    100046: Hat
+    100048: head_crown
+    100050: head_crown 1
+    100052: head_hat_top
+    100054: head_hat_top 1
+    100056: Human_character
+    100058: Ik_Controls
+    100060: IK_Joints1
+    100062: joint1
+    100064: left_elbow
+    100066: left_elbow 1
+    100068: left_fingers
+    100070: left_fingers 1
+    100072: left_fingers_tip
+    100074: left_fingers_tip 1
+    100076: Left_Foot_IK
+    100078: Left_Foot_Tip
+    100080: Left_Foot_Toes
+    100082: left_knuckle
+    100084: left_knuckle 1
+    100086: left_leg_ankle
+    100088: left_leg_ankle 1
+    100090: left_leg_foot_back
+    100092: Left_Leg_IK_Control
+    100094: left_leg_knee
+    100096: left_leg_knee 1
+    100098: left_leg_pelvis
+    100100: left_leg_pelvis 1
+    100102: Left_Leg_Pole
+    100104: left_leg_toes
+    100106: left_leg_toes_tip
+    100108: left_shoulder
+    100110: left_shoulder 1
+    100112: left_thumb_base
+    100114: left_thumb_base 1
+    100116: left_thumb_middle
+    100118: left_thumb_middle 1
+    100120: left_thumb_tip
+    100122: left_thumb_tip 1
+    100124: left_wrist
+    100126: left_wrist 1
+    100128: Lincoln_Controller
+    100130: //RootNode
+    100132: LincolnModel
+    100134: Neck
+    100136: neck
+    100138: neck 1
+    100140: nurbsSphere1
+    100142: nurbsSphere2
+    100144: nurbsSphere4
+    100146: nurbsSphere5
+    100148: pCylinder4
+    100150: polySurface13
+    100152: polySurface14
+    100154: polySurface18
+    100156: polySurface26
+    100158: right_elbow
+    100160: right_elbow 1
+    100162: right_fingers
+    100164: right_fingers 1
+    100166: right_fingers_tip
+    100168: right_fingers_tip 1
+    100170: Right_Foot_Heel
+    100172: Right_Foot_IK
+    100174: Right_Foot_Tip
+    100176: Right_Foot_Toes
+    100178: right_knuckle
+    100180: right_knuckle 1
+    100182: right_leg_ankle
+    100184: right_leg_ankle 1
+    100186: right_leg_foot_back
+    100188: Right_Leg_IK_Control
+    100190: right_leg_knee
+    100192: right_leg_knee 1
+    100194: right_leg_pelvis
+    100196: right_leg_pelvis 1
+    100198: Right_Leg_Pole
+    100200: right_leg_toes
+    100202: right_leg_toes_tip
+    100204: right_shoulder
+    100206: right_shoulder 1
+    100208: right_thumb_base
+    100210: right_thumb_base 1
+    100212: right_thumb_middle
+    100214: right_thumb_middle 1
+    100216: right_thumb_tip
+    100218: right_thumb_tip 1
+    100220: right_wrist
+    100222: right_wrist 1
+    100224: Skeleton1
+    100226: Stomach
+    100228: stomach
+    100230: stomach 1
+    100232: SuitModel
+    100234: transform7
+    100236: transform8
+    100238: Unrigged_character
+    100240: Unrigged_hair
+    100242: Unrigged_hat
+    400000: base_chest
+    400002: base_chest1
+    400004: big_headed_characters
+    400006: Bowtie
+    400008: clothingExport:polySurface1SmoothProxyGroup
+    400010: FK_Controls
+    400012: FK_left_elbow
+    400014: FK_left_fingers
+    400016: FK_left_knuckle
+    400018: FK_left_Shoulder
+    400020: FK_left_thumbbase
+    400022: FK_left_thumbmid
+    400024: FK_left_wrist
+    400026: FK_right_elbow
+    400028: FK_right_fingers
+    400030: FK_right_knuckle
+    400032: FK_right_Shoulder
+    400034: FK_right_thumbbase
+    400036: FK_right_thumbmid
+    400038: FK_right_wrist
+    400040: Gamecharacter
+    400042: Gamecharacter1
+    400044: hairCurve1
+    400046: Hat
+    400048: head_crown
+    400050: head_crown 1
+    400052: head_hat_top
+    400054: head_hat_top 1
+    400056: Human_character
+    400058: Ik_Controls
+    400060: IK_Joints1
+    400062: joint1
+    400064: left_elbow
+    400066: left_elbow 1
+    400068: left_fingers
+    400070: left_fingers 1
+    400072: left_fingers_tip
+    400074: left_fingers_tip 1
+    400076: Left_Foot_IK
+    400078: Left_Foot_Tip
+    400080: Left_Foot_Toes
+    400082: left_knuckle
+    400084: left_knuckle 1
+    400086: left_leg_ankle
+    400088: left_leg_ankle 1
+    400090: left_leg_foot_back
+    400092: Left_Leg_IK_Control
+    400094: left_leg_knee
+    400096: left_leg_knee 1
+    400098: left_leg_pelvis
+    400100: left_leg_pelvis 1
+    400102: Left_Leg_Pole
+    400104: left_leg_toes
+    400106: left_leg_toes_tip
+    400108: left_shoulder
+    400110: left_shoulder 1
+    400112: left_thumb_base
+    400114: left_thumb_base 1
+    400116: left_thumb_middle
+    400118: left_thumb_middle 1
+    400120: left_thumb_tip
+    400122: left_thumb_tip 1
+    400124: left_wrist
+    400126: left_wrist 1
+    400128: Lincoln_Controller
+    400130: //RootNode
+    400132: LincolnModel
+    400134: Neck
+    400136: neck
+    400138: neck 1
+    400140: nurbsSphere1
+    400142: nurbsSphere2
+    400144: nurbsSphere4
+    400146: nurbsSphere5
+    400148: pCylinder4
+    400150: polySurface13
+    400152: polySurface14
+    400154: polySurface18
+    400156: polySurface26
+    400158: right_elbow
+    400160: right_elbow 1
+    400162: right_fingers
+    400164: right_fingers 1
+    400166: right_fingers_tip
+    400168: right_fingers_tip 1
+    400170: Right_Foot_Heel
+    400172: Right_Foot_IK
+    400174: Right_Foot_Tip
+    400176: Right_Foot_Toes
+    400178: right_knuckle
+    400180: right_knuckle 1
+    400182: right_leg_ankle
+    400184: right_leg_ankle 1
+    400186: right_leg_foot_back
+    400188: Right_Leg_IK_Control
+    400190: right_leg_knee
+    400192: right_leg_knee 1
+    400194: right_leg_pelvis
+    400196: right_leg_pelvis 1
+    400198: Right_Leg_Pole
+    400200: right_leg_toes
+    400202: right_leg_toes_tip
+    400204: right_shoulder
+    400206: right_shoulder 1
+    400208: right_thumb_base
+    400210: right_thumb_base 1
+    400212: right_thumb_middle
+    400214: right_thumb_middle 1
+    400216: right_thumb_tip
+    400218: right_thumb_tip 1
+    400220: right_wrist
+    400222: right_wrist 1
+    400224: Skeleton1
+    400226: Stomach
+    400228: stomach
+    400230: stomach 1
+    400232: SuitModel
+    400234: transform7
+    400236: transform8
+    400238: Unrigged_character
+    400240: Unrigged_hair
+    400242: Unrigged_hat
+    2300000: Bowtie
+    2300002: Gamecharacter
+    2300004: Gamecharacter1
+    2300006: polySurface14
+    2300008: polySurface18
+    2300010: polySurface26
+    2300012: SuitModel
+    2300014: Unrigged_hair
+    2300016: Unrigged_hat
+    3300000: Bowtie
+    3300002: Gamecharacter
+    3300004: Gamecharacter1
+    3300006: polySurface14
+    3300008: polySurface18
+    3300010: polySurface26
+    3300012: SuitModel
+    3300014: Unrigged_hair
+    3300016: Unrigged_hat
+    4300000: Gamecharacter
+    4300002: Gamecharacter1
+    4300004: polySurface14
+    4300006: polySurface18
+    4300008: polySurface26
+    4300010: Unrigged_hair
+    4300012: Unrigged_hat
+    4300014: SuitModel
+    4300016: Bowtie
+    4300018: LincolnModel
+    6400000: Bowtie
+    6400002: Gamecharacter
+    6400004: Gamecharacter1
+    6400006: polySurface14
+    6400008: polySurface18
+    6400010: polySurface26
+    6400012: SuitModel
+    6400014: Unrigged_hair
+    6400016: Unrigged_hat
+    7400000: Run
+    7400002: Stand
+    7400004: running
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: LincolnModel
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: running
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: base_chest1
+        weight: 0
+      - path: base_chest1/left_shoulder
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_fingers/left_fingers_tip
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base/left_thumb_middle
+        weight: 0
+      - path: base_chest1/left_shoulder/left_elbow/left_wrist/left_knuckle/left_thumb_base/left_thumb_middle/left_thumb_tip
+        weight: 0
+      - path: base_chest1/neck
+        weight: 0
+      - path: base_chest1/neck/head_crown
+        weight: 0
+      - path: base_chest1/neck/head_crown/head_hat_top
+        weight: 0
+      - path: base_chest1/right_shoulder
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_fingers/right_fingers_tip
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base/right_thumb_middle
+        weight: 0
+      - path: base_chest1/right_shoulder/right_elbow/right_wrist/right_knuckle/right_thumb_base/right_thumb_middle/right_thumb_tip
+        weight: 0
+      - path: base_chest1/stomach
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_foot_back
+        weight: 0
+      - path: base_chest1/stomach/left_leg_pelvis/left_leg_knee/left_leg_ankle/left_leg_toes/left_leg_toes_tip
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_foot_back
+        weight: 0
+      - path: base_chest1/stomach/right_leg_pelvis/right_leg_knee/right_leg_ankle/right_leg_toes/right_leg_toes_tip
+        weight: 0
+      - path: big_headed_characters
+        weight: 0
+      - path: big_headed_characters/Gamecharacter
+        weight: 0
+      - path: big_headed_characters/Gamecharacter/nurbsSphere4
+        weight: 0
+      - path: big_headed_characters/Gamecharacter/nurbsSphere5
+        weight: 0
+      - path: big_headed_characters/Gamecharacter1
+        weight: 0
+      - path: big_headed_characters/Gamecharacter1/nurbsSphere1
+        weight: 0
+      - path: big_headed_characters/Gamecharacter1/nurbsSphere2
+        weight: 0
+      - path: Bowtie
+        weight: 0
+      - path: clothingExport:polySurface1SmoothProxyGroup
+        weight: 0
+      - path: hairCurve1
+        weight: 0
+      - path: Human_character
+        weight: 0
+      - path: Human_character/pCylinder4
+        weight: 0
+      - path: Human_character/pCylinder4/transform8
+        weight: 0
+      - path: Human_character/polySurface13
+        weight: 0
+      - path: Human_character/polySurface13/transform7
+        weight: 0
+      - path: Human_character/polySurface14
+        weight: 0
+      - path: Human_character/polySurface18
+        weight: 0
+      - path: Lincoln_Controller
+        weight: 1
+      - path: Lincoln_Controller/FK_Controls
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle/FK_left_fingers
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle/FK_left_thumbbase
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_left_Shoulder/FK_left_elbow/FK_left_wrist/FK_left_knuckle/FK_left_thumbbase/FK_left_thumbmid
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle/FK_right_fingers
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle/FK_right_thumbbase
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/FK_right_Shoulder/FK_right_elbow/FK_right_wrist/FK_right_knuckle/FK_right_thumbbase/FK_right_thumbmid
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/Neck
+        weight: 0
+      - path: Lincoln_Controller/FK_Controls/Stomach/Neck/Hat
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Left_Leg_IK_Control
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Left_Leg_Pole
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Right_Leg_IK_Control
+        weight: 0
+      - path: Lincoln_Controller/Ik_Controls/Right_Leg_Pole
+        weight: 0
+      - path: Lincoln_Controller/IK_Joints1
+        weight: 0
+      - path: Lincoln_Controller/IK_Joints1/Left_Foot_IK
+        weight: 0
+      - path: Lincoln_Controller/IK_Joints1/Right_Foot_IK
+        weight: 0
+      - path: Lincoln_Controller/LincolnModel
+        weight: 0
+      - path: Lincoln_Controller/Skeleton1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_fingers 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_fingers 1/left_fingers_tip
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_thumb_base 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_thumb_base 1/left_thumb_middle
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/left_shoulder
+          1/left_elbow 1/left_wrist 1/left_knuckle 1/left_thumb_base 1/left_thumb_middle
+          1/left_thumb_tip 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/neck 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/neck 1/head_crown
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/neck 1/head_crown
+          1/head_hat_top 1
+        weight: 0
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_fingers 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_fingers 1/right_fingers_tip
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_thumb_base 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_thumb_base 1/right_thumb_middle
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/joint1/base_chest/right_shoulder
+          1/right_elbow 1/right_wrist 1/right_knuckle 1/right_thumb_base 1/right_thumb_middle
+          1/right_thumb_tip 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1/left_leg_ankle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1/left_leg_ankle 1/Left_Foot_Toes
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/left_leg_pelvis 1/left_leg_knee
+          1/left_leg_ankle 1/Left_Foot_Toes/Left_Foot_Tip
+        weight: 0
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1/Right_Foot_Heel
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1/Right_Foot_Heel/Right_Foot_Toes
+        weight: 1
+      - path: Lincoln_Controller/Skeleton1/stomach 1/right_leg_pelvis 1/right_leg_knee
+          1/right_leg_ankle 1/Right_Foot_Heel/Right_Foot_Toes/Right_Foot_Tip
+        weight: 0
+      - path: SuitModel
+        weight: 0
+      - path: Unrigged_character
+        weight: 0
+      - path: Unrigged_character/polySurface26
+        weight: 0
+      - path: Unrigged_hair
+        weight: 0
+      - path: Unrigged_hat
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 

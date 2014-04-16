@@ -46,22 +46,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AnimationScript.js" />
+     <Compile Include="Assets\Scripts\AnimationScript.js" />
+     <Compile Include="Assets\Scripts\bigAttack.js" />
+     <Compile Include="Assets\Scripts\countDown.js" />
      <Compile Include="Assets\Scripts\dynamic_camera.js" />
+     <Compile Include="Assets\Scripts\hitBox.js" />
+     <Compile Include="Assets\Scripts\hitBoxHeavy.js" />
+     <Compile Include="Assets\Scripts\hitBoxLight.js" />
+     <Compile Include="Assets\Scripts\hitBoxMed.js" />
+     <Compile Include="Assets\Scripts\mainMenu.js" />
      <Compile Include="Assets\Scripts\movement.js" />
-     <Compile Include="Assets\bigAttack.js" />
-     <Compile Include="Assets\countDown.js" />
-     <Compile Include="Assets\hitBox.js" />
-     <Compile Include="Assets\hitBoxHeavy.js" />
-     <Compile Include="Assets\hitBoxLight.js" />
-     <Compile Include="Assets\hitBoxMed.js" />
-     <Compile Include="Assets\mainMenu.js" />
-     <Compile Include="Assets\platform.js" />
-     <Compile Include="Assets\platformCollision.js" />
-     <Compile Include="Assets\popVoteMeter.js" />
-     <Compile Include="Assets\soundTrig.js" />
-     <Compile Include="Assets\stageFall.js" />
-     <Compile Include="Assets\taftPunch.js" />
+     <Compile Include="Assets\Scripts\platform.js" />
+     <Compile Include="Assets\Scripts\platformCollision.js" />
+     <Compile Include="Assets\Scripts\popVoteMeter.js" />
+     <Compile Include="Assets\Scripts\soundTrig.js" />
+     <Compile Include="Assets\Scripts\stageFall.js" />
+     <Compile Include="Assets\Scripts\taftPunch.js" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
   <ItemGroup>
