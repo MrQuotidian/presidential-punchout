@@ -28,6 +28,12 @@ function OnMouseUp()
 	}
 }
 
+function Start()
+{
+	if(!isQuit)
+		this.renderer.material.color = Color.black;
+}
+
 function Update(){
 //quit game if escape key is pressed
 

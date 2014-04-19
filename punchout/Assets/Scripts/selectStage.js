@@ -10,7 +10,7 @@ var s : Transform;
 var p : Transform;
 var axisInUse = false;
 var text : TextMesh;
-var moved = false;
+//var moved = false;
 
 function Start () {
 onHouse = true;
@@ -38,10 +38,10 @@ function Update () {
 			s.particleSystem.Play();
 			text.text = "Lady Liberty";
 			
-			if(!moved && onStat)
-				text.transform.position.x += 1;
+			//if(!moved && onStat)
+			//	text.transform.position.x += 1;
 				
-			moved = true;
+			//moved = true;
 
 		}
 		if(Input.GetAxis("L_XAxis_1") < 0 && onStat == true && !axisInUse) //&& this.name == "stat")
@@ -73,7 +73,7 @@ function Update () {
 			p.particleSystem.Play();
 			s.particleSystem.Stop();
 			text.text = "American Pie";
-			moved = true;
+			//moved = true;
 
 
 		}
@@ -89,7 +89,7 @@ function Update () {
 			p.particleSystem.Stop();
 			s.particleSystem.Play();
 			text.text = "Lady Liberty";
-			moved = true;
+			//moved = true;
 
 
 		}
