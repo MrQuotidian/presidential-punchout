@@ -1,17 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\rotatePie.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\mainMenu.js">
     <Files>
-      <File FileName="Assets\Scripts\rotatePie.js" Line="9" Column="37" />
+      <File FileName="Assets\Scripts\mainMenu.js" Line="14" Column="2" />
       <File FileName="Assets\Scripts\countDown.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\taftPunch.js" Line="298" Column="3" />
+      <File FileName="Assets\Scripts\taftPunch.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\platform.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\AnimationScript.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\hitBoxLight.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\hitBoxHeavy.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\hitBoxMed.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\bigAttack.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\mainMenu.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

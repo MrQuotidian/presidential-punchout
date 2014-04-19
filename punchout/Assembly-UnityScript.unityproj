@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\platformCollision.js" />
      <Compile Include="Assets\Scripts\popVoteMeter.js" />
      <Compile Include="Assets\Scripts\rotatePie.js" />
+     <Compile Include="Assets\Scripts\selectStage.js" />
      <Compile Include="Assets\Scripts\soundTrig.js" />
      <Compile Include="Assets\Scripts\stageFall.js" />
      <Compile Include="Assets\Scripts\taftPunch.js" />
