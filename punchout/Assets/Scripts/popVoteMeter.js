@@ -43,7 +43,7 @@ function OnGUI()
 	 	if (GUI.Button(Rect(0,0,Screen.width,Screen.height),"PLAY AGAIN?", style2) || Input.GetKey(KeyCode.JoystickButton0))
 	 	{
 	 		//if(Input.GetKey(KeyCode.JoystickButton0))
-	 		Application.LoadLevel(0);
+	 		Application.LoadLevel(1);
 	 		Time.timeScale = 1;
 	 		hit = 0;
 	 		hit2 = 0;
