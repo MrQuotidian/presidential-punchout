@@ -68,7 +68,12 @@ function Update()
 		wincond.text = "Taft WINS!";
 
 		end = true;
-		Time.timeScale = 0;
+		if(Time.timeScale - .015f >= 0 && Time.timeScale > .5f)
+			Time.timeScale -= .015f;
+		else if(Time.timeScale - .009f >= 0)
+			Time.timeScale -= .009f;
+		else Time.timeScale = 0;
+			
 		//yield WaitForSeconds(4);
 		//hit2 = 0;
 		//hit = 0;
@@ -82,14 +87,17 @@ function Update()
 		wincond.text = "Lincoln WINS!";	
 
 		end = true;
-		Time.timeScale = 0;
+
+		if(Time.timeScale - .015f >= 0 && Time.timeScale > .5f)
+			Time.timeScale -= .015f;
+		else if(Time.timeScale - .009f >= 0)
+			Time.timeScale -= .009f;
+		else Time.timeScale = 0;
 		//yield WaitForSeconds(4);
 		//hit2 = 0;
 		//hit = 0;
 	}
-    // for thi`s example, the bar display is linked to the current time,
-    // however you would set this value based on your desired display
-    // eg, the loading progress, the player's health, or whatever.
+
     barDisplay = hit;
     bar2Display = hit2;
 }

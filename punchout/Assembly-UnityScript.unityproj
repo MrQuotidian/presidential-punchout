@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\rotatePie.js" />
      <Compile Include="Assets\Scripts\selectStage.js" />
      <Compile Include="Assets\Scripts\soundTrig.js" />
+     <Compile Include="Assets\Scripts\spawnItem.js" />
      <Compile Include="Assets\Scripts\stageFall.js" />
      <Compile Include="Assets\Scripts\taftPunch.js" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
