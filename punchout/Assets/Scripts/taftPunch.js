@@ -36,6 +36,7 @@ var idle : String;
 //var script : AccessScript;
 var sound = new AudioClip[7];
 var plsStopTaft = false;
+var isItem = false;
 
 function Start () {
 
@@ -238,7 +239,14 @@ function Update () {
 function OnCollisionEnter(player : Collision)
 {
 	//Debug.Log(blocking);
-	if(blocking == false && player.gameObject.name != this)
+	//Debug.Log(player.gameObject.name);
+	if(player.gameObject.name == "item1(Clone)")
+	{
+		Debug.Log("Picked up item 1");
+		Destroy(player.gameObject);
+		isItem = true;
+	}
+	if(blocking == false && player.gameObject.name != this && !isItem)
 	{
 		//particle.Clear();
 		//animation.Stop("walking");
@@ -290,6 +298,7 @@ function OnCollisionEnter(player : Collision)
 			plsStopTaft = false;
 		}
     }
+    isItem = false;
 }
 
 function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
