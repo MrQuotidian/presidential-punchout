@@ -1,16 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\spawnItem.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\popVoteMeter.js">
     <Files>
-      <File FileName="Assets\Scripts\rotatePie.js" Line="10" Column="4" />
+      <File FileName="Assets\Scripts\popVoteMeter.js" Line="18" Column="1" />
+      <File FileName="Assets\Scripts\rotatePie.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\countDown.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\spawnItem.js" Line="16" Column="73" />
-      <File FileName="Assets\Scripts\popVoteMeter.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\spawnItem.js" Line="25" Column="3" />
+      <File FileName="Assets\Scripts\popVoteMeter.js" Line="110" Column="2" />
       <File FileName="Assets\Scripts\selectStage.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\mainMenu.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\taftPunch.js" Line="301" Column="20" />
       <File FileName="Assets\Scripts\platform.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AnimationScript.js" Line="35" Column="2" />
+      <File FileName="Assets\Scripts\AnimationScript.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\hitBoxLight.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\hitBoxHeavy.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\hitBoxMed.js" Line="1" Column="1" />

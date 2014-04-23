@@ -16,6 +16,7 @@ var popVoteStyle : GUIStyle;
 var popVoteTitle : GUIStyle;
 var popVoteStyleBot : GUIStyle;
 
+
 function OnGUI()
 {
 
@@ -92,7 +93,13 @@ function Update()
 			Time.timeScale -= .015f;
 		else if(Time.timeScale - .009f >= 0)
 			Time.timeScale -= .009f;
-		else Time.timeScale = 0;
+		else 
+		{
+			Time.timeScale = 0;
+			//Camera.current.gameObject.transform.position = Linc.transform.position;
+		}
+		
+		
 		//yield WaitForSeconds(4);
 		//hit2 = 0;
 		//hit = 0;
