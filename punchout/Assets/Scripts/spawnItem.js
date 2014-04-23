@@ -4,7 +4,11 @@ var init = false;
 var goLeft = false;
 var goRight = false;
 var item1 : GameObject;
+var item2 : GameObject;
+var item3 : GameObject;
 var itemClone : Rigidbody;
+var itemClone2 : Rigidbody;
+var itemClone3 : Rigidbody;
 
 function Start () {
 	
@@ -12,7 +16,7 @@ function Start () {
 
 function Update () {
 	
-	var makeItem = Random.Range(0, 1000);
+	var makeItem = Random.Range(0, 10);
 	if(makeItem == 1 && Time.timeScale == 1 && Time.timeSinceLevelLoad > 10)
 	{
 		dropItem();
@@ -51,8 +55,27 @@ function Update () {
 function dropItem()
 {
 	//yield WaitForSeconds(10);
-	Debug.Log("Drop Item");
-	itemClone = Instantiate(item1, transform.position, Quaternion.identity).rigidbody;
-	itemClone.velocity = -transform.up * Time.deltaTime * 2;
+	//Debug.Log("Drop Item");
+	var item = Random.Range(1, 4);
+	//Debug.Log(item);
+	if(item == 1)
+	{
+		itemClone = Instantiate(item1, transform.position, Quaternion.identity).rigidbody;
+		itemClone.transform.Rotate(Vector3(0, 180, 0));
+		itemClone.velocity = -transform.up * Time.deltaTime * 2;
+	}
+	if(item == 2)
+	{
+		itemClone2 = Instantiate(item2, transform.position, Quaternion.identity).rigidbody;
+		itemClone2.transform.Rotate(Vector3(30,270,0));
+		itemClone2.transform.position.z = 5.85;
+		itemClone2.velocity = -transform.up * Time.deltaTime * 2;
+	}
+	if(item == 3)
+	{
+		itemClone3 = Instantiate(item3, transform.position, Quaternion.identity).rigidbody;
+		itemClone3.transform.Rotate(Vector3(-90,0,0));
+		itemClone3.velocity = -transform.up * Time.deltaTime * 2;
+	}
 
 }

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 75aad5c81f218436189582ac42a8c7c0
+ShaderImporter:
+  defaultTextures:
+  - _Control: {instanceID: 0}
+  - _Splat3: {instanceID: 0}
+  - _Splat2: {instanceID: 0}
+  - _Splat1: {instanceID: 0}
+  - _Splat0: {instanceID: 0}
+  - _MainTex: {fileID: 2800000, guid: 4d1986688ba839547949551819734a13, type: 3}
+  userData: 

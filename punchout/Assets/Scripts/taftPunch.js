@@ -37,6 +37,10 @@ var idle : String;
 var sound = new AudioClip[7];
 var plsStopTaft = false;
 var isItem = false;
+var emitSpeed = 20;
+var numberHits = 0;
+var numberDefs = 0;
+var isFast = false;
 
 function Start () {
 
@@ -50,6 +54,10 @@ function Update () {
 	//{
 	//	particle.Clear();
 	//}
+	if(isFast == false)
+	{
+		
+	}
 	
 	if(!audio.isPlaying)
 	{
@@ -94,14 +102,17 @@ function Update () {
 			cubeClone = Instantiate(cube, hand.position, transform.rotation).rigidbody;
 			//cubeClone.position = Vector3(0,4,0);
 			//cubeClone.transform.Rotate(Vector3(0, 90, 0));
-			cubeClone.velocity = transform.forward * 20;
+			cubeClone.velocity = transform.forward * emitSpeed;
+			cubeClone.gameObject.renderer.material.color.a = 0.7;
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			attack1buf = true;
 			//this.knockback = 10;
 			WaitAndDestroy(0.4f, .02f, cubeClone);//You can use this move many times a second.
 			//animation.Play(stand);
-
+			numberHits++;
+			if(numberHits == 4)
+				emitSpeed = 20;
 
 	    	//Destroy(cubeClone.gameObject);
 			
@@ -130,11 +141,14 @@ function Update () {
 			cubeClone2 = Instantiate(cube2, hand.position, transform.rotation).rigidbody;
 			//cubeClone.position = Vector3(0,4,0);
 			//this.knockback = 20;
-			cubeClone2.velocity = transform.forward * 20;
+			cubeClone2.velocity = transform.forward * emitSpeed;
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			attack1buf = true;
 			WaitAndDestroy(0.3f, .4f, cubeClone2);
+			numberHits++;
+			if(numberHits == 4)
+				emitSpeed = 20;
 
 			
 			
@@ -158,13 +172,15 @@ function Update () {
 			cubeClone3 = Instantiate(cube3, hand.position, transform.rotation).rigidbody;
 			//cubeClone.position = Vector3(0,4,0);
 
-			cubeClone3.velocity = transform.forward * 20;
+			cubeClone3.velocity = transform.forward * emitSpeed;
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			//this.knockback = 20;
 			attack1buf = true;
 			WaitAndDestroy(0.2f, .6f, cubeClone3);
-			//audio.clip = footsteps;
+			numberHits++;
+			if(numberHits == 4)
+				emitSpeed = 20;
 			
 			
 			
@@ -194,15 +210,18 @@ function Update () {
 			cubeClone4.transform.Rotate(Vector3(-180, 0, 0), 20);
 
 			if(transform.forward.x < 0)
-				cubeClone4.velocity = Vector3(-10, 20, 0);//transform.forward * 20;
+				cubeClone4.velocity = Vector3(-10, emitSpeed, 0);//transform.forward * 20;
 			else
-				cubeClone4.velocity = Vector3(10, 20, 0);//transform.forward * 20;
+				cubeClone4.velocity = Vector3(10, emitSpeed, 0);//transform.forward * 20;
 			//this.knockback = 1000;
 			//cubeClone.velocity.y = transform.up * 10;
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			attack1buf = true;
 			WaitAndDestroy(0.4f, .8f, cubeClone4);
+			numberHits++;
+			if(numberHits == 4)
+				emitSpeed = 20;
 			//audio.clip = footsteps;
 		}
 		
@@ -242,7 +261,28 @@ function OnCollisionEnter(player : Collision)
 	//Debug.Log(player.gameObject.name);
 	if(player.gameObject.name == "item1(Clone)")
 	{
-		Debug.Log("Picked up item 1");
+		//Debug.Log("Picked up item 1");
+		emitSpeed = 60;
+		numberHits = 0;
+		Destroy(player.gameObject);
+		isItem = true;
+		
+	}
+	if(player.gameObject.name == "item2(Clone)")
+	{
+		//Debug.Log("Picked up item 1");
+		//this.gameObject.GetComponent
+		//numberHits = 0;
+		var sp = this.gameObject.GetComponent(AnimationScript);
+		Debug.Log(sp);
+		isFast = true;
+		Destroy(player.gameObject);
+		isItem = true;
+		
+	}
+	if(player.gameObject.name == "item3(Clone)");
+	{
+		
 		Destroy(player.gameObject);
 		isItem = true;
 	}
