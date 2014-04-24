@@ -21,13 +21,14 @@ var onFloor = false;
 var ifp2exists = true;
 var ifp3exists = true;
 var floor : GameObject;
-
+var controller : CharacterController;
 public var frozen = false;
 
 //animation.wrapMode = WrapMode.Loop;
 
 function Start ()
 {
+	controller  = GetComponent(CharacterController);
 	animation.Play(stand);
 	//audio.clip = footsteps;
 	//audio.loop = true;
@@ -64,6 +65,7 @@ function Update () {
 			//animation.wrapMode = WrapMode.Loop;
 			//isMoving = true;
 			transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
+			//controller.SimpleMove(Vector3(-moveSpeed, 0, 0));
 			
 				
 			if(Input.GetKey(jump))
@@ -106,6 +108,10 @@ function Update () {
 				Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider));
 			if(ifp3exists)
 				Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
+		}
+		else if(Input.GetKey(jump))
+		{
+			transform.position = this.transform.position;
 		}
 		
 		//if(Input.GetAxis(LincolnControllerMove)==0 && !onFloor)

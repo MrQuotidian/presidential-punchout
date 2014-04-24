@@ -1,30 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\taftPunch.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnimationScript.js">
     <Files>
-      <File FileName="Assets\Scripts\taftPunch.js" Line="106" Column="56" />
-      <File FileName="Assets\Scripts\spawnItem.js" Line="77" Column="13" />
-      <File FileName="Assets\Scripts\rotatePie.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\countDown.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\popVoteMeter.js" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\popVoteMeter.js">
-    <Files>
-      <File FileName="Assets\Scripts\popVoteMeter.js" Line="18" Column="1" />
-      <File FileName="Assets\Scripts\rotatePie.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\countDown.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\spawnItem.js" Line="25" Column="3" />
-      <File FileName="Assets\Scripts\popVoteMeter.js" Line="110" Column="2" />
->>>>>>> 344a835b05774ffe4977eedf1d0ce8ee4ae57720
-      <File FileName="Assets\Scripts\selectStage.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\mainMenu.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\platform.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AnimationScript.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\hitBoxLight.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\hitBoxHeavy.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\hitBoxMed.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\bigAttack.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\spawnItem.js" Line="65" Column="59" />
+      <File FileName="Assets\Scripts\taftPunch.js" Line="306" Column="1" />
+      <File FileName="Assets\Scripts\AnimationScript.js" Line="114" Column="49" />
+      <File FileName="Assets\Scripts\dynamic_camera.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\platform.js" Line="11" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

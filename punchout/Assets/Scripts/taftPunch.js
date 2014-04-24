@@ -41,8 +41,12 @@ var emitSpeed = 20;
 var numberHits = 0;
 var numberDefs = 0;
 var isFast = false;
+var hasShield = false;
+var shield : GameObject;
+var shiel : GameObject;
 
 function Start () {
+
 
 	//cubeClone = 
 	//script = floor.GetComponent("popVoteMeter");
@@ -50,13 +54,45 @@ function Start () {
 
 function Update () {
 
+
 	//if(Input.GetKey(left) || Input.GetKey(right))
 	//{
 	//	particle.Clear();
 	//}
+	if(hasShield)
+	{	
+		if(this.gameObject.transform.parent.rotation.y >= 0)
+		{
+			shiel.gameObject.transform.position.x = this.gameObject.transform.position.x + 2;
+			shiel.gameObject.transform.position.y = this.gameObject.transform.position.y + 3;
+			//shiel.gameObject.transform.rotation.x = 80;
+			//shiel.gameObject.transform.rotation.y = 0;
+			//if(shiel.transform.rotation.x > 0)
+				//shiel.transform.rotation.x = -shiel.transform.rotation.x;
+			//shiel.gameObject.transform.rotation.z = 40;
+
+						
+
+		}
+		else{
+			shiel.gameObject.transform.position.x = this.gameObject.transform.position.x - 2;
+			shiel.gameObject.transform.position.y = this.gameObject.transform.position.y + 3;
+			//if(shiel.transform.rotation.x > 0)
+				//shiel.transform.rotation.x = -shiel.transform.rotation.x;
+			//shiel.gameObject.transform.rotation.x = -80;
+			//shiel.gameObject.transform.rotation.y = 0;
+			//shiel.gameObject.transform.rotation.z = 40;
+
+
+
+		}
+	}
+	
 	if(isFast == false)
 	{
-		
+		var sp = this.gameObject.transform.parent.GetComponent(AnimationScript);
+		//Debug.Log(sp);
+		sp.moveSpeed = 20;
 	}
 	
 	if(!audio.isPlaying)
@@ -103,7 +139,7 @@ function Update () {
 			//cubeClone.position = Vector3(0,4,0);
 			//cubeClone.transform.Rotate(Vector3(0, 90, 0));
 			cubeClone.velocity = transform.forward * emitSpeed;
-			cubeClone.gameObject.renderer.material.color.a = 0.7;
+			cubeClone.gameObject.renderer.material.color.a = 0.5;
 			//yield WaitForSeconds(3);
 			//audio.Stop();
 			attack1buf = true;
@@ -111,8 +147,10 @@ function Update () {
 			WaitAndDestroy(0.4f, .02f, cubeClone);//You can use this move many times a second.
 			//animation.Play(stand);
 			numberHits++;
-			if(numberHits == 4)
+			if(numberHits == 5)
 				emitSpeed = 20;
+				
+			isFast = false;
 
 	    	//Destroy(cubeClone.gameObject);
 			
@@ -139,6 +177,8 @@ function Update () {
 			audio.clip = reach;
 			audio.Play();
 			cubeClone2 = Instantiate(cube2, hand.position, transform.rotation).rigidbody;
+						cubeClone2.gameObject.renderer.material.color.a = 0.5;
+
 			//cubeClone.position = Vector3(0,4,0);
 			//this.knockback = 20;
 			cubeClone2.velocity = transform.forward * emitSpeed;
@@ -147,10 +187,11 @@ function Update () {
 			attack1buf = true;
 			WaitAndDestroy(0.3f, .4f, cubeClone2);
 			numberHits++;
-			if(numberHits == 4)
+			if(numberHits == 5)
 				emitSpeed = 20;
 
-			
+			isFast = false;
+
 			
 			
 		}
@@ -170,6 +211,8 @@ function Update () {
 			audio.loop = false;
 			audio.Play();
 			cubeClone3 = Instantiate(cube3, hand.position, transform.rotation).rigidbody;
+						cubeClone3.gameObject.renderer.material.color.a = 0.5;
+
 			//cubeClone.position = Vector3(0,4,0);
 
 			cubeClone3.velocity = transform.forward * emitSpeed;
@@ -179,10 +222,11 @@ function Update () {
 			attack1buf = true;
 			WaitAndDestroy(0.2f, .6f, cubeClone3);
 			numberHits++;
-			if(numberHits == 4)
+			if(numberHits == 5)
 				emitSpeed = 20;
 			
-			
+			isFast = false;
+
 			
 			
 			
@@ -204,6 +248,7 @@ function Update () {
 			audio.Play();
 			cubeClone4 = Instantiate(cube4, hand.position, transform.rotation).rigidbody;
 			//cubeClone.position = Vector3(0,4,0);
+			cubeClone4.gameObject.renderer.material.color.a = 0.5;
 
 
 			//cubeClone4.velocity = transform.forward * 20;
@@ -220,8 +265,11 @@ function Update () {
 			attack1buf = true;
 			WaitAndDestroy(0.4f, .8f, cubeClone4);
 			numberHits++;
-			if(numberHits == 4)
+			if(numberHits == 5)
 				emitSpeed = 20;
+		
+			isFast = false;
+
 			//audio.clip = footsteps;
 		}
 		
@@ -257,6 +305,8 @@ function Update () {
 
 function OnCollisionEnter(player : Collision)
 {
+
+	
 	//Debug.Log(blocking);
 	//Debug.Log(player.gameObject.name);
 	if(player.gameObject.name == "item1(Clone)")
@@ -273,20 +323,60 @@ function OnCollisionEnter(player : Collision)
 		//Debug.Log("Picked up item 1");
 		//this.gameObject.GetComponent
 		//numberHits = 0;
-		var sp = this.gameObject.GetComponent(AnimationScript);
-		Debug.Log(sp);
+		var sp = this.gameObject.transform.parent.GetComponent(AnimationScript);
+		//Debug.Log(sp);
+		sp.moveSpeed = 35;
 		isFast = true;
 		Destroy(player.gameObject);
 		isItem = true;
 		
 	}
-	if(player.gameObject.name == "item3(Clone)");
-	{
-		
-		Destroy(player.gameObject);
-		isItem = true;
+	if(player.gameObject.name == "item3(Clone)")
+	{	
+		if(hasShield)
+		{
+			Destroy(player.gameObject);
+			isItem = true;
+		}
+		else{
+			blocking = true;
+			numberDefs = 0;
+			Debug.Log(this.gameObject.transform.parent.rotation.y);
+			if(this.gameObject.transform.parent.rotation.y >= 0)
+			{
+				shiel = Instantiate(shield, Vector3(this.gameObject.transform.position.x + 2, this.gameObject.transform.position.y + 3, this.gameObject.transform.position.z), Quaternion.identity);
+			//this.gameObject.renderer.material.color = Color.black;
+				shiel.transform.Rotate(Vector3(-80,0,0));
+				//Debug.Log("Facing right");
+			}
+			else{
+				shiel = Instantiate(shield, Vector3(this.gameObject.transform.position.x - 2, this.gameObject.transform.position.y + 3, this.gameObject.transform.position.z), Quaternion.identity);
+			//this.gameObject.renderer.material.color = Color.black;
+				shiel.transform.Rotate(Vector3(-80,0,0));
+							//Debug.Log("Facing left");
+
+			}
+			//shield.velocity = -transform.up * Time.deltaTime * 2;
+			hasShield = true;
+			Destroy(player.gameObject);
+			isItem = true;
+		}
 	}
-	if(blocking == false && player.gameObject.name != this && !isItem)
+	
+	if(hasShield && !isItem)
+	{
+		numberDefs++;
+		if(numberDefs == 2)
+		{
+			hasShield = false;
+			blocking = false;
+			Destroy(shiel.gameObject);
+			isItem = true;
+		}
+	}
+	
+	
+	if(blocking == false && player.gameObject.name != this && !isItem && !hasShield)
 	{
 		//particle.Clear();
 		//animation.Stop("walking");
