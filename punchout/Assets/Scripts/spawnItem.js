@@ -16,8 +16,8 @@ function Start () {
 
 function Update () {
 	
-	var makeItem = Random.Range(0, 100);
-	if(makeItem == 1 && Time.timeScale == 1 && Time.timeSinceLevelLoad > 0)
+	var makeItem = Random.Range(0, 800);
+	if(makeItem == 1 && Time.timeScale == 1 && Time.timeSinceLevelLoad > 10)
 	{
 		dropItem();
 	}

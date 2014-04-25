@@ -273,7 +273,7 @@ function Update () {
 			//audio.clip = footsteps;
 		}
 		
-		if(Input.GetKey(block) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
+		if(Input.GetKey(block) && attack1buf == false && !Input.GetAxis(ControllerMove) && !hasShield)// && !Input.GetKey(right))
 		{
 			//attacking = true;
 			animation.Stop(idle);
@@ -305,7 +305,7 @@ function Update () {
 
 function OnTriggerEnter(player : Collider)
 {
-	Debug.Log(player.gameObject.name);
+	//Debug.Log(player.gameObject.name);
 	if(player.gameObject.name == "item1(Clone)")
 	{
 		//Debug.Log("Picked up item 1");
@@ -338,7 +338,7 @@ function OnTriggerEnter(player : Collider)
 		else{
 			blocking = true;
 			numberDefs = 0;
-			Debug.Log(this.gameObject.transform.parent.rotation.y);
+			//Debug.Log(this.gameObject.transform.parent.rotation.y);
 			if(this.gameObject.transform.parent.rotation.y >= 0)
 			{
 				shiel = Instantiate(shield, Vector3(this.gameObject.transform.position.x + 2, this.gameObject.transform.position.y + 3, this.gameObject.transform.position.z), Quaternion.identity);

@@ -1,13 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\taftPunch.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\spawnItemMoon.js">
     <Files>
+      <File FileName="Assets\Scripts\selectStage.js" Line="164" Column="1" />
+      <File FileName="Assets\Scripts\mainMenu.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\moveLunar.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\taftPunch.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\spawnItem.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\taftPunch.js" Line="306" Column="11" />
-      <File FileName="Assets\Scripts\AnimationScript.js" Line="169" Column="4" />
+      <File FileName="Assets\Scripts\AnimationScript.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\platform.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\dynamic_camera1.js" Line="52" Column="52" />
-      <File FileName="Assets\Scripts\movement.js" Line="154" Column="34" />
+      <File FileName="Assets\Scripts\dynamic_camera1.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\movement.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\bobItem.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\spawnItemMoon.js" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\selectStage.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\openingSound.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\menuMusic.js" Line="13" Column="19" />
+      <File FileName="Assets\Scripts\howToAlpha.js" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,6 +1,13 @@
 ﻿#pragma strict
 
-var isQuit=false;
+var isQuit = false;
+var axisInUse = false;
+var onStart = false;
+var onHow = false;
+var onQuit = false;
+var start : GameObject;
+var quit : GameObject;
+var controls : GameObject;
 
 function OnMouseEnter()
 {
@@ -11,7 +18,7 @@ function OnMouseEnter()
 function OnMouseExit()
 {
 	//change text color
-	renderer.material.color=Color.red;
+	renderer.material.color=Color.blue;
 }
 
 function OnMouseUp()
@@ -30,37 +37,100 @@ function OnMouseUp()
 
 function Start()
 {
-	if(!isQuit)
+	//onStart = true;
+	if(!isQuit && onStart)
 		this.renderer.material.color = Color.black;
 }
 
 function Update(){
+
+	if(Input.GetAxis("L_YAxis_1") == 0)
+		axisInUse = false;
 //quit game if escape key is pressed
 
-	if(Input.GetAxis("L_YAxis_1") > 0 && this.name == "start")
+	if(Input.GetAxis("L_YAxis_1") > 0 && onStart && !axisInUse)
 	{
-		renderer.material.color=Color.black;
+		start.renderer.material.color=Color.black;
+		axisInUse = true;
+		
+		onStart = true;
+		onHow = false;
+		onQuit = false;
 	}
-	else if(Input.GetAxis("L_YAxis_1") < 0 && this.name == "start")
+	else if(Input.GetAxis("L_YAxis_1") < 0 && onStart && !axisInUse)
 	{
-		renderer.material.color=Color.red;
+		start.renderer.material.color=Color.blue;
+		controls.renderer.material.color=Color.black;
+		axisInUse = true;
+		
+		onStart = false;
+		onHow = true;
+		onQuit = false;
 
 	}
 	
-	if(Input.GetAxis("L_YAxis_1") < 0 && this.name == "quit")
+	if(Input.GetAxis("L_YAxis_1") > 0 && onHow && !axisInUse)
 	{
-		renderer.material.color=Color.black;
+		controls.renderer.material.color=Color.blue;
+		start.renderer.material.color=Color.black;
+		axisInUse = true;
+		
+		onStart = true;
+		onHow = false;
+		onQuit = false;
 	}
-	else if(Input.GetAxis("L_YAxis_1") > 0 && this.name == "quit")
+	else if(Input.GetAxis("L_YAxis_1") < 0 && onHow && !axisInUse)
 	{
-		renderer.material.color=Color.red;
+		quit.renderer.material.color=Color.black;
+		controls.renderer.material.color=Color.blue;
+		axisInUse = true;
+		
+		onStart = false;
+		onHow = false;
+		onQuit = true;
 
 	}
 	
-	if(this.name == "start" && this.renderer.material.color == Color.black && Input.GetKey(KeyCode.Joystick1Button0))
+	if(Input.GetAxis("L_YAxis_1") > 0 && onQuit && !axisInUse)
+	{
+		controls.renderer.material.color=Color.black;
+		quit.renderer.material.color=Color.blue;
+		axisInUse = true;
+		
+		onStart = false;
+		onHow = true;
+		onQuit = false;
+	}
+	else if(Input.GetAxis("L_YAxis_1") < 0 && onQuit && !axisInUse)
+	{
+		quit.renderer.material.color=Color.black;
+		axisInUse = true;
+		
+		onStart = false;
+		onHow = false;
+		onQuit = true;
+
+	}
+	
+	
+	
+	
+	if(onStart && Input.GetKey(KeyCode.Joystick1Button0))
 	{
 		//Debug.Log("here");
 		Application.LoadLevel(1);
+	}
+	
+	if(onQuit && Input.GetKey(KeyCode.Joystick1Button0))
+	{
+		//Debug.Log("here");
+		Application.Quit();
+	}
+	
+	if(onHow && Input.GetKey(KeyCode.Joystick1Button0))
+	{
+		//Debug.Log("here");
+		Application.LoadLevel(6);
 	}
 	
 	if (Input.GetKey(KeyCode.Escape)) 
