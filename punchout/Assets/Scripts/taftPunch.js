@@ -303,12 +303,9 @@ function Update () {
 	}
 }
 
-function OnCollisionEnter(player : Collision)
+function OnTriggerEnter(player : Collider)
 {
-
-	
-	//Debug.Log(blocking);
-	//Debug.Log(player.gameObject.name);
+	Debug.Log(player.gameObject.name);
 	if(player.gameObject.name == "item1(Clone)")
 	{
 		//Debug.Log("Picked up item 1");
@@ -374,6 +371,15 @@ function OnCollisionEnter(player : Collision)
 			isItem = true;
 		}
 	}
+}
+
+function OnCollisionEnter(player : Collision)
+{
+
+	
+	//Debug.Log(blocking);
+	//Debug.Log(player.gameObject.name);
+	
 	
 	
 	if(blocking == false && player.gameObject.name != this && !isItem && !hasShield)

@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnimationScript.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\taftPunch.js">
     <Files>
-      <File FileName="Assets\Scripts\spawnItem.js" Line="65" Column="59" />
-      <File FileName="Assets\Scripts\taftPunch.js" Line="306" Column="1" />
-      <File FileName="Assets\Scripts\AnimationScript.js" Line="114" Column="49" />
-      <File FileName="Assets\Scripts\dynamic_camera.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\platform.js" Line="11" Column="4" />
+      <File FileName="Assets\Scripts\spawnItem.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\taftPunch.js" Line="306" Column="11" />
+      <File FileName="Assets\Scripts\AnimationScript.js" Line="169" Column="4" />
+      <File FileName="Assets\Scripts\platform.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\dynamic_camera1.js" Line="52" Column="52" />
+      <File FileName="Assets\Scripts\movement.js" Line="154" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

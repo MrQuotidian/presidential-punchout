@@ -23,6 +23,8 @@ var ifp3exists = true;
 var floor : GameObject;
 var controller : CharacterController;
 public var frozen = false;
+var timeSinceButtonUp = 0;
+var inTrig = false;
 
 //animation.wrapMode = WrapMode.Loop;
 
@@ -36,11 +38,8 @@ function Start ()
 }
 
 function Update () {
-	//if(Input.GetKeyDown("space"))
-		//animation.Play("jump");
-		
-	//if(Input.GetKey("mouse 0"))
-		//animation.Play("chop");
+
+
 	var script = this.gameObject.GetComponent(taftPunch);
 	if(this.gameObject.name == "TaftDone2")
 	{
@@ -109,10 +108,7 @@ function Update () {
 			if(ifp3exists)
 				Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
 		}
-		else if(Input.GetKey(jump))
-		{
-			transform.position = this.transform.position;
-		}
+
 		
 		//if(Input.GetAxis(LincolnControllerMove)==0 && !onFloor)
 		//{
@@ -149,18 +145,28 @@ function Update () {
 }
 
 function OnTriggerEnter (other : Collider) {
-	
+		//		Physics.IgnoreLayerCollision(8,9);
+
+	inTrig = true;
 	if(other.gameObject.name == floor.name)
 		onFloor = true;
 		
 	//Debug.Log("entered the floor");
 }
 
+
+
 function OnTriggerExit (other : Collider) {
-	
+	//Physics.IgnoreLayerCollision(8,9, false);
+	inTrig = false;
 	if(other.gameObject.name == floor.name)
 		onFloor = false;
 	//Debug.Log("exited the floor");
+}
+
+function OnCollisionEnter(player : Collision)
+{
+	//Debug.Log(player.gameObject.name);
 }
 
 
