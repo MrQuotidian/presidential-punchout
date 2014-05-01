@@ -1,22 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\spawnItemMoon.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\popVoteMeter.js">
     <Files>
-      <File FileName="Assets\Scripts\selectStage.js" Line="164" Column="1" />
-      <File FileName="Assets\Scripts\mainMenu.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\moveLunar.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\taftPunch.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\spawnItem.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AnimationScript.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\platform.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\dynamic_camera1.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\movement.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\bobItem.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\spawnItemMoon.js" Line="14" Column="2" />
-      <File FileName="Assets\Scripts\selectStage.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\openingSound.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\menuMusic.js" Line="13" Column="19" />
-      <File FileName="Assets\Scripts\howToAlpha.js" Line="9" Column="1" />
+      <File FileName="Assets\Scripts\popVoteMeter.js" Line="32" Column="62" />
+      <File FileName="Assets\Scripts\victorypillar.js" Line="24" Column="39" />
+      <File FileName="Assets\Scripts\taftPunch.js" Line="315" Column="30" />
+      <File FileName="Assets\Scripts\spawnItemMoon.js" Line="19" Column="36" />
+      <File FileName="Assets\Scripts\spawnItem.js" Line="81" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

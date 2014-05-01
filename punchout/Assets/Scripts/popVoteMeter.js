@@ -15,8 +15,15 @@ var style2 : GUIStyle;
 var popVoteStyle : GUIStyle;
 var popVoteTitle : GUIStyle;
 var popVoteStyleBot : GUIStyle;
+var variables : GameObject;
 
-
+function Start()
+{
+	hit = 0;
+	hit2 = 0;
+	variables = GameObject.Find("variables");
+	Debug.Log(variables.gameObject.name);
+}
 function OnGUI()
 {
 
@@ -41,14 +48,14 @@ function OnGUI()
  
  	if(end)
  	{
-	 	if (GUI.Button(Rect(0,0,Screen.width,Screen.height),"PLAY AGAIN?", style2) || Input.GetKey(KeyCode.JoystickButton0))
+	 	/**if (GUI.Button(Rect(0,0,Screen.width,Screen.height),"PLAY AGAIN?", style2) || Input.GetKey(KeyCode.JoystickButton0))
 	 	{
 	 		//if(Input.GetKey(KeyCode.JoystickButton0))
 	 		Application.LoadLevel(1);
 	 		Time.timeScale = 1;
 	 		hit = 0;
 	 		hit2 = 0;
-	 	}
+	 	}**/
 				//Debug.Log("Clicked the button with text");
 	}
 } 
@@ -63,6 +70,8 @@ function Update()
 
 	if(hit2 >= 1)
 	{
+		var sp = variables.gameObject.transform.GetComponent(vars);
+		sp.isLincolnWinner = false;
 		//Debug.Log("Taft WINS!");
 		wincond.enabled = true;
 		wincond.alignment = TextAlignment.Center;
@@ -73,7 +82,7 @@ function Update()
 			Time.timeScale -= .015f;
 		else if(Time.timeScale - .009f >= 0)
 			Time.timeScale -= .009f;
-		else Time.timeScale = 0;
+		else Application.LoadLevel(7);
 			
 		//yield WaitForSeconds(4);
 		//hit2 = 0;
@@ -81,6 +90,9 @@ function Update()
 	}	
 	if(hit >= 1)
 	{
+		var vic = variables.gameObject.transform.GetComponent(vars);
+		vic.isLincolnWinner = true;
+		//Application.LoadLevel(7);
 		//Debug.Log("Lincoln WINS!");
 		wincond.enabled = true;
 		wincond.alignment = TextAlignment.Center;
@@ -95,7 +107,7 @@ function Update()
 			Time.timeScale -= .009f;
 		else 
 		{
-			Time.timeScale = 0;
+			Application.LoadLevel(7);
 			//Camera.current.gameObject.transform.position = Linc.transform.position;
 		}
 		

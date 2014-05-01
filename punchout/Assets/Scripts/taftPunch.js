@@ -54,7 +54,7 @@ function Start () {
 
 function Update () {
 
-
+	//Debug.Log(numberDefs);
 	//if(Input.GetKey(left) || Input.GetKey(right))
 	//{
 	//	particle.Clear();
@@ -305,6 +305,7 @@ function Update () {
 
 function OnTriggerEnter(player : Collider)
 {
+
 	//Debug.Log(player.gameObject.name);
 	if(player.gameObject.name == "item1(Clone)")
 	{
@@ -335,7 +336,8 @@ function OnTriggerEnter(player : Collider)
 			Destroy(player.gameObject);
 			isItem = true;
 		}
-		else{
+		else
+		{
 			blocking = true;
 			numberDefs = 0;
 			//Debug.Log(this.gameObject.transform.parent.rotation.y);
@@ -360,10 +362,16 @@ function OnTriggerEnter(player : Collider)
 		}
 	}
 	
+
+}
+
+function OnCollisionEnter(player : Collision)
+{
+
 	if(hasShield && !isItem)
 	{
 		numberDefs++;
-		if(numberDefs == 2)
+		if(numberDefs >= 2)
 		{
 			hasShield = false;
 			blocking = false;
@@ -371,12 +379,6 @@ function OnTriggerEnter(player : Collider)
 			isItem = true;
 		}
 	}
-}
-
-function OnCollisionEnter(player : Collision)
-{
-
-	
 	//Debug.Log(blocking);
 	//Debug.Log(player.gameObject.name);
 	
