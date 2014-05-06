@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+/*Bounces the item to fix the bug where you can't hit an item from the bottom*/
 function Start () {
 
 }

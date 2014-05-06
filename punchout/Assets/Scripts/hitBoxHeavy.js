@@ -1,10 +1,9 @@
-﻿#pragma strict
-
+#pragma strict
+/*Hitbox stats for the Y button*/
 var knock : int;
 var damage : float;
 function Start () {
 	
-
 }
 
 function Update () {
@@ -14,12 +13,10 @@ function Update () {
 function OnCollisionEnter(player : Collision)
 {
 
-//Debug.Log("The object hit was: " + player.gameObject.name);
-	
+
 	var scriptlinc = player.gameObject.transform.GetComponent(taftPunch);
 
-    //scriptlinc.blocking;
-    
+
 	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false)
 	{
 			scriptlinc.knockback = knock;
@@ -48,7 +45,6 @@ function OnCollisionEnter(player : Collision)
     		popVoteMeter.hit2 = 0;
     	}
 	}
-    //Debug.Log("Collision Detected");
- 
+
     
 }

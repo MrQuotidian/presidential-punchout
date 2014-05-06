@@ -1,5 +1,8 @@
+#pragma strict
+/*Moves the camera left and right according the player position*/
+
 private var margin:float = 50; // space between screen border and nearest fighter
-// 50 seems to be a good value 
+// 50 seems to be a good value
 private var z0:float = 0; // coord z of the fighters plane
 private var zCam:float; // camera distance to the fighters plane
 private var wScene:float; // scene width
@@ -9,7 +12,7 @@ private var xL:float; // left screen X coordinate
 private var xR:float; // right screen X coordinate
  
 function calcScreen(p1:Transform, p2:Transform){
-    // Calculates the xL and xR screen coordinates 
+    // Calculates the xL and xR screen coordinates
     if (p1.position.x<p2.position.x){
        xL = p1.position.x-margin;
        xR = p2.position.x+margin;
@@ -21,7 +24,7 @@ function calcScreen(p1:Transform, p2:Transform){
  
 function Start(){
     // find references to the fighters
-    f1 = GameObject.Find("LincolnFBX5").transform;   
+    f1 = GameObject.Find("LincolnFBX5").transform;
     f2 = GameObject.Find("TaftDone2").transform;
     // initializes scene size and camera distance
     calcScreen(f1,f2);

@@ -1,5 +1,6 @@
 ﻿#pragma strict
 
+/*Script for RB on the controller*/
 var knock : int;
 var damage : float;
 function Start () {
@@ -14,11 +15,9 @@ function Update () {
 function OnCollisionEnter(player : Collision)
 {
 
-//Debug.Log("The object hit was: " + player.gameObject.name);
 	
 	var scriptlinc = player.gameObject.transform.GetComponent(taftPunch);
 
-    //scriptlinc.blocking;
     
 	if(player.gameObject.name == "LincolnFBX5" && scriptlinc.blocking == false)
 	{
@@ -48,7 +47,6 @@ function OnCollisionEnter(player : Collision)
     		popVoteMeter.hit2 = 0;
     	}
 	}
-    //Debug.Log("Collision Detected");
  
     
 }

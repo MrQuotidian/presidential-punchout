@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*Drop items specifically on the moon, it needed to be moved because the moon level is not the same width*/
 
 var init = false;
 var goLeft = false;

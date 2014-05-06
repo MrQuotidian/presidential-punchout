@@ -1,3 +1,7 @@
+#pragma strict
+
+/*Detects collisions with platforms and allows players to jump through them*/
+
 // Use this for initialization
 function Start () {
 }

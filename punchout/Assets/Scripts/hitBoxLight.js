@@ -1,6 +1,6 @@
-﻿#pragma strict
+#pragma strict
+/*Hitbox stats for the light attack A button*/
 
-//var wins : GUIText;
 var knock : int;
 var damage : float;
 function Start () {

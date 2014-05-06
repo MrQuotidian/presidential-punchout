@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*Draws and manages the popular vote meters*/
 
 var barDisplay : float = 0;
 var bar2Display : float = 0;
@@ -19,10 +21,10 @@ var variables : GameObject;
 
 function Start()
 {
+	//reset the pop vote meters to 0 on game start
 	hit = 0;
 	hit2 = 0;
 	variables = GameObject.Find("variables");
-	Debug.Log(variables.gameObject.name);
 }
 function OnGUI()
 {
@@ -46,58 +48,45 @@ function OnGUI()
     GUI.EndGroup ();
     GUI.Label(Rect(0, 60, Screen.width, 30), "Popular Vote Meter", popVoteTitle);
  
- 	if(end)
- 	{
-	 	/**if (GUI.Button(Rect(0,0,Screen.width,Screen.height),"PLAY AGAIN?", style2) || Input.GetKey(KeyCode.JoystickButton0))
-	 	{
-	 		//if(Input.GetKey(KeyCode.JoystickButton0))
-	 		Application.LoadLevel(1);
-	 		Time.timeScale = 1;
-	 		hit = 0;
-	 		hit2 = 0;
-	 	}**/
-				//Debug.Log("Clicked the button with text");
-	}
-} 
+}
  
 function Update()
 {
 
 	if(hit2 < 1 && hit < 1)
 	{
+		//no winner yet
 		wincond.enabled = false;
 	}
 
+	//These will occur if there is a winner
 	if(hit2 >= 1)
 	{
 		var sp = variables.gameObject.transform.GetComponent(vars);
 		sp.isLincolnWinner = false;
-		//Debug.Log("Taft WINS!");
+
 		wincond.enabled = true;
 		wincond.alignment = TextAlignment.Center;
 		wincond.text = "Taft WINS!";
 
+		//Slows down time to make a cool effect
 		end = true;
 		if(Time.timeScale - .015f >= 0 && Time.timeScale > .5f)
 			Time.timeScale -= .015f;
 		else if(Time.timeScale - .009f >= 0)
 			Time.timeScale -= .009f;
-		else Application.LoadLevel(7);
+		else Application.LoadLevel(7);//The winner screen
 			
-		//yield WaitForSeconds(4);
-		//hit2 = 0;
-		//hit = 0;
-	}	
+	}
 	if(hit >= 1)
 	{
 		var vic = variables.gameObject.transform.GetComponent(vars);
 		vic.isLincolnWinner = true;
-		//Application.LoadLevel(7);
-		//Debug.Log("Lincoln WINS!");
+
 		wincond.enabled = true;
 		wincond.alignment = TextAlignment.Center;
 
-		wincond.text = "Lincoln WINS!";	
+		wincond.text = "Lincoln WINS!";
 
 		end = true;
 
@@ -105,16 +94,10 @@ function Update()
 			Time.timeScale -= .015f;
 		else if(Time.timeScale - .009f >= 0)
 			Time.timeScale -= .009f;
-		else 
+		else
 		{
 			Application.LoadLevel(7);
-			//Camera.current.gameObject.transform.position = Linc.transform.position;
 		}
-		
-		
-		//yield WaitForSeconds(4);
-		//hit2 = 0;
-		//hit = 0;
 	}
 
     barDisplay = hit;

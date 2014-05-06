@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*Controls the main menu interactions*/
 
 var isQuit = false;
 var axisInUse = false;
@@ -28,7 +30,7 @@ function OnMouseUp()
 		//quit the game
 		Application.Quit();
 	}
-	else 
+	else
 	{
 		//load level
 		Application.LoadLevel(1);
@@ -133,8 +135,8 @@ function Update(){
 		Application.LoadLevel(6);
 	}
 	
-	if (Input.GetKey(KeyCode.Escape)) 
-	{ 
+	if (Input.GetKey(KeyCode.Escape))
+	{
 		Application.Quit();
 	}
 }

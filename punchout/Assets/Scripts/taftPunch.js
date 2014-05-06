@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*All fighting controls and information kept here*/
 
 var attack1 : KeyCode;
 var attack2 : KeyCode;
@@ -48,50 +50,26 @@ var shiel : GameObject;
 function Start () {
 
 
-	//cubeClone = 
-	//script = floor.GetComponent("popVoteMeter");
 }
 
 function Update () {
 
-	//Debug.Log(numberDefs);
-	//if(Input.GetKey(left) || Input.GetKey(right))
-	//{
-	//	particle.Clear();
-	//}
-	if(hasShield)
-	{	
+	if(hasShield)//has the shield
+	{
 		if(this.gameObject.transform.parent.rotation.y >= 0)
 		{
 			shiel.gameObject.transform.position.x = this.gameObject.transform.position.x + 2;
 			shiel.gameObject.transform.position.y = this.gameObject.transform.position.y + 3;
-			//shiel.gameObject.transform.rotation.x = 80;
-			//shiel.gameObject.transform.rotation.y = 0;
-			//if(shiel.transform.rotation.x > 0)
-				//shiel.transform.rotation.x = -shiel.transform.rotation.x;
-			//shiel.gameObject.transform.rotation.z = 40;
-
-						
-
 		}
 		else{
 			shiel.gameObject.transform.position.x = this.gameObject.transform.position.x - 2;
 			shiel.gameObject.transform.position.y = this.gameObject.transform.position.y + 3;
-			//if(shiel.transform.rotation.x > 0)
-				//shiel.transform.rotation.x = -shiel.transform.rotation.x;
-			//shiel.gameObject.transform.rotation.x = -80;
-			//shiel.gameObject.transform.rotation.y = 0;
-			//shiel.gameObject.transform.rotation.z = 40;
-
-
-
 		}
 	}
 	
-	if(isFast == false)
+	if(isFast == false)//has the shoes
 	{
 		var sp = this.gameObject.transform.parent.GetComponent(AnimationScript);
-		//Debug.Log(sp);
 		sp.moveSpeed = 20;
 	}
 	
@@ -99,19 +77,14 @@ function Update () {
 	{
 		audio.clip = footsteps;
 	}
-	//otherScript = GetComponent("popVoteMeter"); 
-    //Debug(otherScript.hit);
+
     if(stunned)
     {
   		var script = transform.parent.gameObject.GetComponent(AnimationScript);
     	script.frozen = true;
     	var scriptch = transform.gameObject.GetComponent(AnimationScript);
     	scriptch.frozen = true;
-    	//playername = "lincoln";
-    	//DisableKey(left);
-    	//DisableKey(right);
-    	//Debug.Log(transform.parent.name);
-		//AnimationScript.frozen = true;
+
     }
     
 	if(stunned == false)
@@ -122,14 +95,12 @@ function Update () {
 		var script2 = transform.parent.gameObject.GetComponent(AnimationScript);
 		script2.frozen = false;
 		
+		//A
 		if(Input.GetKeyDown(attack1) && attack1buf == false  && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 			particle.Emit(100);
 
-			//attacking = true;
-			//Debug.Log("punching");
 			animation.Stop(idle);
-			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring1");
 			stunned = true;
 
@@ -140,8 +111,7 @@ function Update () {
 			//cubeClone.transform.Rotate(Vector3(0, 90, 0));
 			cubeClone.velocity = transform.forward * emitSpeed;
 			cubeClone.gameObject.renderer.material.color.a = 0.5;
-			//yield WaitForSeconds(3);
-			//audio.Stop();
+
 			attack1buf = true;
 			//this.knockback = 10;
 			WaitAndDestroy(0.4f, .02f, cubeClone);//You can use this move many times a second.
@@ -152,23 +122,14 @@ function Update () {
 				
 			isFast = false;
 
-	    	//Destroy(cubeClone.gameObject);
-			
-			//particle.Emit(2);
-			
-			//particleEmitter.Emit();
-			//particleEmitter.Emit(Vector3.zero, Vector3.forward, 20, 5000, Color.cyan);
-			//Debug.Log("punching");
-			
-			
 
 		}
+		//B
 		if(Input.GetKeyDown(attack2) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 		
 			particle.Emit(500);
-			//attacking = true;
-			//particle.Emit(2);
+
 			animation.Stop(idle);
 			//transform.Translate(0, 0, 0);
 			animation.CrossFade("punchstring2");
@@ -177,13 +138,10 @@ function Update () {
 			audio.clip = reach;
 			audio.Play();
 			cubeClone2 = Instantiate(cube2, hand.position, transform.rotation).rigidbody;
-						cubeClone2.gameObject.renderer.material.color.a = 0.5;
+			cubeClone2.gameObject.renderer.material.color.a = 0.5;
 
-			//cubeClone.position = Vector3(0,4,0);
-			//this.knockback = 20;
 			cubeClone2.velocity = transform.forward * emitSpeed;
-			//yield WaitForSeconds(3);
-			//audio.Stop();
+
 			attack1buf = true;
 			WaitAndDestroy(0.3f, .4f, cubeClone2);
 			numberHits++;
@@ -196,6 +154,7 @@ function Update () {
 			
 		}
 		
+		//Y
 		if(Input.GetKeyDown(attack3) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 			
@@ -211,14 +170,10 @@ function Update () {
 			audio.loop = false;
 			audio.Play();
 			cubeClone3 = Instantiate(cube3, hand.position, transform.rotation).rigidbody;
-						cubeClone3.gameObject.renderer.material.color.a = 0.5;
-
-			//cubeClone.position = Vector3(0,4,0);
+			cubeClone3.gameObject.renderer.material.color.a = 0.5;
 
 			cubeClone3.velocity = transform.forward * emitSpeed;
-			//yield WaitForSeconds(3);
-			//audio.Stop();
-			//this.knockback = 20;
+
 			attack1buf = true;
 			WaitAndDestroy(0.2f, .6f, cubeClone3);
 			numberHits++;
@@ -227,12 +182,9 @@ function Update () {
 			
 			isFast = false;
 
-			
-			
-			
-
 		}
 		
+		//RB
 		if(Input.GetKeyDown(attack4) && attack1buf == false && !Input.GetAxis(ControllerMove))// && !Input.GetKey(right))
 		{
 			particle.Emit(500);
@@ -250,18 +202,13 @@ function Update () {
 			//cubeClone.position = Vector3(0,4,0);
 			cubeClone4.gameObject.renderer.material.color.a = 0.5;
 
-
-			//cubeClone4.velocity = transform.forward * 20;
 			cubeClone4.transform.Rotate(Vector3(-180, 0, 0), 20);
 
 			if(transform.forward.x < 0)
 				cubeClone4.velocity = Vector3(-10, emitSpeed, 0);//transform.forward * 20;
 			else
 				cubeClone4.velocity = Vector3(10, emitSpeed, 0);//transform.forward * 20;
-			//this.knockback = 1000;
-			//cubeClone.velocity.y = transform.up * 10;
-			//yield WaitForSeconds(3);
-			//audio.Stop();
+
 			attack1buf = true;
 			WaitAndDestroy(0.4f, .8f, cubeClone4);
 			numberHits++;
@@ -273,7 +220,8 @@ function Update () {
 			//audio.clip = footsteps;
 		}
 		
-		if(Input.GetKey(block) && attack1buf == false && !Input.GetAxis(ControllerMove) && !hasShield)// && !Input.GetKey(right))
+		//LB
+		if(Input.GetKey(block) && attack1buf == false && !Input.GetAxis(ControllerMove) && !hasShield)
 		{
 			//attacking = true;
 			animation.Stop(idle);
@@ -306,7 +254,7 @@ function Update () {
 function OnTriggerEnter(player : Collider)
 {
 
-	//Debug.Log(player.gameObject.name);
+    //collided with boxing gloves
 	if(player.gameObject.name == "item1(Clone)")
 	{
 		//Debug.Log("Picked up item 1");
@@ -316,6 +264,7 @@ function OnTriggerEnter(player : Collider)
 		isItem = true;
 		
 	}
+	//collided with shoes
 	if(player.gameObject.name == "item2(Clone)")
 	{
 		//Debug.Log("Picked up item 1");
@@ -329,8 +278,9 @@ function OnTriggerEnter(player : Collider)
 		isItem = true;
 		
 	}
+	//collided with shield
 	if(player.gameObject.name == "item3(Clone)")
-	{	
+	{
 		if(hasShield)
 		{
 			Destroy(player.gameObject);
@@ -365,6 +315,7 @@ function OnTriggerEnter(player : Collider)
 
 }
 
+//for attack collisions
 function OnCollisionEnter(player : Collision)
 {
 
@@ -386,11 +337,7 @@ function OnCollisionEnter(player : Collision)
 	
 	if(blocking == false && player.gameObject.name != this && !isItem && !hasShield)
 	{
-		//particle.Clear();
-		//animation.Stop("walking");
-		//animation.Stop(stand);
-		//Debug.Log(animation.IsPlaying();
-		//if(this.gameObject.name == "LincolnFBX5")
+
 		animation.Play("stun", PlayMode.StopAll);
 		plsStopTaft = true;
 		stunned = true;
@@ -400,9 +347,7 @@ function OnCollisionEnter(player : Collision)
 		audio.loop = false;
 		audio.Play();
 		
-		//var scrip = player.gameObject.GetComponent(taftPunch);
-		//Debug.Log(player.gameObject.name);
-		
+
 		if(player.transform.rotation.y < 0 && transform.parent.rotation.y < 0)
 		{
 		//	Debug.Log("first one");
@@ -427,7 +372,7 @@ function OnCollisionEnter(player : Collision)
 		else if(player.transform.rotation.y > 0 && transform.parent.rotation.y > 0)
 		{
 				transform.parent.transform.Translate(Vector3(0, 0, knockback) * Time.deltaTime);
-		}	 
+		}
 
 		yield WaitForSeconds(.7f);
 		{
@@ -439,6 +384,7 @@ function OnCollisionEnter(player : Collision)
     isItem = false;
 }
 
+//function to destroy attack waves
 function WaitAndDestroy(delayd : float, delay2 : float, obj : Rigidbody){
 		
 		yield WaitForSeconds(delayd);

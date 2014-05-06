@@ -1,12 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\popVoteMeter.js">
     <Files>
-      <File FileName="Assets\Scripts\popVoteMeter.js" Line="32" Column="62" />
-      <File FileName="Assets\Scripts\victorypillar.js" Line="24" Column="39" />
-      <File FileName="Assets\Scripts\taftPunch.js" Line="315" Column="30" />
-      <File FileName="Assets\Scripts\spawnItemMoon.js" Line="19" Column="36" />
-      <File FileName="Assets\Scripts\spawnItem.js" Line="81" Column="2" />
+      <File FileName="Assets\Scripts\popVoteMeter.js" Line="8" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

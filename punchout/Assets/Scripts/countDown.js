@@ -1,4 +1,6 @@
 ﻿#pragma strict
+/*Counts down before the start of the match*/
+
 var show3 = false;
 var show2 = false;
 var show1 = false;
@@ -13,13 +15,10 @@ var Taft : Transform;
 
  
 function Start () {
-	//StopWatch(1);
-	//timeKeeper = 0;
-	//Time.timeScale = 0;
-	//t = 1;
+
 	var scrippause = Lincoln.gameObject.GetComponent(taftPunch);
 	var scrippause2 = Taft.gameObject.GetComponent(taftPunch);
-	//Debug.Log(scrippause);
+
 	scrippause.stunned = true;
 	scrippause2.stunned = true;
 
@@ -28,30 +27,23 @@ function Start () {
 
 function Update () {
 
-	//Debug.Log(Time.realtimeSinceStartup);
-	//timeKeeper = Time.realtimeSinceStartup;
-	//if(Time.realtimeSinceStartup 
+
 	if(!done)
 	{
 		if(Time.timeSinceLevelLoad >= 3)
 		{	show3 = true;
-			
-			//Time.timeScale = 0;
-			
-			//t+=1;
+
 		}
 		if(Time.timeSinceLevelLoad  >= 4)
 		{
 			show2 = true;
 			show3 = false;
-			//StopWatch(1);
-			//t+=1;
+
 		}
 		if(Time.timeSinceLevelLoad  >= 5 && dontcheck == false)
 		{
 			show1 = true;
 			show2 = false;
-			//Time.timeScale = 1;
 		}
 		if(Time.timeSinceLevelLoad >= 6)
 		{
@@ -61,19 +53,12 @@ function Update () {
 			done = true;
 			var scrippause = Lincoln.GetComponent(taftPunch);
 			var scrippause2 = Taft.GetComponent(taftPunch);
+			//Un-freeze the players
 			scrippause.stunned = false;
 			scrippause2.stunned = false;
 		}
 	
 	}
-}
-
-function StopWatch (time:int)
-{
-	
-   
-   //Time.timeScale = 1;
-   //showText=true;
 }
 
 function OnGUI ()
@@ -82,7 +67,6 @@ function OnGUI ()
    if (show3 == true)
    {
       GUI.Label (Rect(0,100,Screen.width,80),"3...", st);
-      //yield WaitForSeconds(1);
       
    }
    if(show2 == true)

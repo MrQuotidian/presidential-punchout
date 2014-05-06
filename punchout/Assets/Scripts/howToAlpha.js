@@ -1,5 +1,5 @@
-﻿#pragma strict
-
+#pragma strict
+/*Sets the alpha level of the how to screen*/
 function Start () {
 	this.gameObject.renderer.material.color.a = 0.5;
 

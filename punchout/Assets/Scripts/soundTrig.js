@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*FIXME: Not being used right now, could control walking sounds later*/
 var target : Transform;
 var IsGrounded = true;
 
@@ -11,7 +13,7 @@ function Update () {
 
 }
 
-function OnTriggerEnter(collision : Collider) 
+function OnTriggerEnter(collision : Collider)
 {
 
 //Debug.Log("enter");
@@ -27,7 +29,7 @@ function OnTriggerEnter(collision : Collider)
 // 4. And much, much more
 }
 
-function OnTriggerExit(collision : Collider) 
+function OnTriggerExit(collision : Collider)
 {
 //Debug.Log("exit");
 

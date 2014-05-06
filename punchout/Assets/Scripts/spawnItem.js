@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*spawns items under an invisible block*/
 
 var init = false;
 var goLeft = false;
@@ -16,8 +18,8 @@ function Start () {
 
 function Update () {
 	
-	var makeItem = Random.Range(0, 800);
-	if(makeItem == 1 && Time.timeScale == 1 && Time.timeSinceLevelLoad > 10)
+	var makeItem = Random.Range(0, 800);//1 in 800 chance of dropping an item
+	if(makeItem == 1 && Time.timeScale == 1 && Time.timeSinceLevelLoad > 10)//must wait 10 seconds before an item is dropped
 	{
 		dropItem();
 	}

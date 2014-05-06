@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*Plays the intro sound to a fight and then loops the music*/
 
 var opener : AudioClip;
 var loop : AudioClip;

@@ -1,4 +1,7 @@
-﻿#pragma strict
+#pragma strict
+
+/*Hitbox stats for medium attack B button*/
+
 var knock : int;
 var damage : float;
 function Start () {

@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+/*Controls moving animations*/
 var footsteps : AudioClip;
 var moveSpeed = 5.0;
 
@@ -10,7 +10,6 @@ var fallPlay : KeyCode;
 var moved = false;
 var leftright : String;
 var stand : String;
-//public var target : Transform;
 var platform : Transform;
 var platform2 : Transform;
 var platform3 : Transform;
@@ -26,15 +25,12 @@ public var frozen = false;
 var timeSinceButtonUp = 0;
 var inTrig = false;
 
-//animation.wrapMode = WrapMode.Loop;
 
 function Start ()
 {
 	controller  = GetComponent(CharacterController);
 	animation.Play(stand);
-	//audio.clip = footsteps;
-	//audio.loop = true;
-	//animation("running").wrapMode = WrapMode.Loop;
+
 }
 
 function Update () {
@@ -43,28 +39,23 @@ function Update () {
 	var script = this.gameObject.GetComponent(taftPunch);
 	if(this.gameObject.name == "TaftDone2")
 	{
-		//Debug.Log(script.plsStopTaft);
-		if(script.plsStopTaft == true) //&& this.gameObject.name == "taftp")
+		if(script.plsStopTaft == true) //HACK to get taft to stop animating when he gets hit
 		{
 			animation.Play("stun", PlayMode.StopAll);
-			//animation.Stop("walking");
 		}
 	}
 	
-	if(!frozen) //&& taftPunch.playername == "lincoln")
+	if(!frozen)//Frozen players are unable to move (stunned, etc)
 	{
 		
-		if (Input.GetAxis(LincolnControllerMove) < 0)
+		if (Input.GetAxis(LincolnControllerMove) < 0)//Move left
 		{
 			moved = true;
 			transform.eulerAngles.y = -90;
-			                               
-			                               
+			                                                         
 			animation.Play(leftright);
-			//animation.wrapMode = WrapMode.Loop;
-			//isMoving = true;
+
 			transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
-			//controller.SimpleMove(Vector3(-moveSpeed, 0, 0));
 			
 				
 			if(Input.GetKey(jump))
@@ -75,18 +66,12 @@ function Update () {
 				
 			else if(!audio.isPlaying)
 				audio.Play();
-				
-			//animation.Play(stand);
-			///if(lincoln.position.y != 11.50729)
-			//	audio.Stop();
-			//isMoving = true;
-			//runSound();
+
 			
 		}
-		else if (Input.GetAxis(LincolnControllerMove) > 0)
+		else if (Input.GetAxis(LincolnControllerMove) > 0)//move right
 		{
 			moved = true;
-			//Debug.Log("going right");
 			transform.eulerAngles.y = 90;
 			animation.Play(leftright);
 			transform.Translate(Vector3(0, 0, moveSpeed) * Time.deltaTime);
@@ -100,7 +85,7 @@ function Update () {
 			else if(!audio.isPlaying)
 				audio.Play();
 		}
-		else if(Input.GetAxis(ControllerFall) < -0.8f)
+		else if(Input.GetAxis(ControllerFall) < -0.8f)//Hit down to fall through
 		{
 			Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider));
 			if(ifp2exists)
@@ -109,64 +94,36 @@ function Update () {
 				Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider));
 		}
 
-		
-		//if(Input.GetAxis(LincolnControllerMove)==0 && !onFloor)
-		//{
-			
-		//	Physics.IgnoreCollision(player.GetComponent(CharacterController), platform.GetComponent(BoxCollider), false);
-		//	Physics.IgnoreCollision(player.GetComponent(CharacterController), platform2.GetComponent(BoxCollider), false);
-		//	Physics.IgnoreCollision(player.GetComponent(CharacterController), platform3.GetComponent(BoxCollider), false);
-		
-		//}
-
-		if(moved == true)
+		if(moved == true)//Reset the animation when the controller is at origin
 		if(Input.GetAxis(LincolnControllerMove) == 0 || Input.GetAxis(LincolnControllerMove) == 0)
 		{
 			animation.Stop(leftright);
-			//animation.CrossFade("standing");
-			//animation.wrapMode = WrapMode.Once;
 			animation.Play(stand);
-			//audio.Stop();
-			//isMoving = false;
-			//runSound();
+
 			audio.Stop();
 			moved = false;
 		}
 	}
-	else
-	{
-		//if(this.gameObject.name == "TaftDone2")
-		//{
-		//	animation.Stop("walking");
-		///	animation.Play("stun");
-		//
-	}
 
 }
 
+//FIXME: not being used? We don't stop the walking sound anymore
 function OnTriggerEnter (other : Collider) {
-		//		Physics.IgnoreLayerCollision(8,9);
 
 	inTrig = true;
 	if(other.gameObject.name == floor.name)
 		onFloor = true;
-		
-	//Debug.Log("entered the floor");
+
 }
 
 
-
+//FIXME: not being used? We don't stop the walking sound anymore
 function OnTriggerExit (other : Collider) {
-	//Physics.IgnoreLayerCollision(8,9, false);
 	inTrig = false;
 	if(other.gameObject.name == floor.name)
 		onFloor = false;
-	//Debug.Log("exited the floor");
 }
 
-function OnCollisionEnter(player : Collision)
-{
-	//Debug.Log(player.gameObject.name);
-}
+
 
 

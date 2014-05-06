@@ -1,4 +1,6 @@
-﻿var gameObjects : GameObject[]; 
+#pragma strict
+/*Keeps the music playing between menu scenes*/
+var gameObjects : GameObject[];
  
 function Start() {
  	audio.Play();

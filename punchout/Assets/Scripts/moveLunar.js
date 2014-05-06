@@ -1,3 +1,7 @@
+#pragma strict
+
+/*Moves the lunar lander up and down*/
+
 var amplitude: float = 5; // platform excursion (+/- 5 units, in this case)
 var speed: float = 0.2; // movements per second
 var direction: Vector3 = Vector3.forward; // direction relative to the platform

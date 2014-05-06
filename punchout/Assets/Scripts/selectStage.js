@@ -1,4 +1,6 @@
-﻿#pragma strict
+#pragma strict
+
+/*Controls the stage selection screen*/
 
 var onHouse = false;
 var onStat = false;
@@ -41,10 +43,6 @@ function Update () {
 			s.particleSystem.Play();
 			text.text = "Lady Liberty";
 			
-			//if(!moved && onStat)
-			//	text.transform.position.x += 1;
-				
-			//moved = true;
 
 		}
 		if(Input.GetAxis("L_XAxis_1") < 0 && onStat == true && !axisInUse) //&& this.name == "stat")
@@ -73,7 +71,6 @@ function Update () {
 			onStat = false;
 			onMoon = false;
 			highlight.transform.position.x = p.transform.position.x;
-//						Input.ResetInputAxes();
 			axisInUse = true;
 			p.particleSystem.Play();
 			s.particleSystem.Stop();

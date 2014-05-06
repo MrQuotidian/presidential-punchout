@@ -1,4 +1,7 @@
-﻿#pragma strict
+#pragma strict
+
+/*Moves the model up on a pillar when they win*/
+
 public var speed : float; // m/s
 public var isLincolnWinner = false;
 var lincoln : GameObject;
@@ -19,7 +22,7 @@ function Update () {
 		lincoln.gameObject.SetActive(true);
 		taft.gameObject.SetActive(false);
 	}
-	else 
+	else
 	{
 		lincoln.gameObject.SetActive(false);
 		taft.gameObject.SetActive(true);
